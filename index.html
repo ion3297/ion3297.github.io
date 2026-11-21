@@ -1,0 +1,1676 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>蕾丝猫 秀人网 - 品牌官方视频门户,原创影像社区</title>
+<meta name="description" content="蕾丝猫 秀人网官方网站，专注原创人像影像与生活美学的视频品牌门户，汇聚优质创作者、精品内容与品牌故事，打造值得信赖的内容生态。">
+<meta name="keywords" content="蕾丝猫,秀人网,蕾丝猫官网,原创影像,人像摄影,视频品牌,创作者社区">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b1230'/%3E%3Ccircle cx='32' cy='27' r='13' fill='none' stroke='%23e8a0c8' stroke-width='3'/%3E%3Cpath d='M22 22l-7-8 12 4zM42 22l7-8-12 4z' fill='%23e8a0c8'/%3E%3Ccircle cx='27' cy='26' r='2' fill='%23e8a0c8'/%3E%3Ccircle cx='37' cy='26' r='2' fill='%23e8a0c8'/%3E%3Cpath d='M24 45q8 10 16 0' stroke='%237fd6c4' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --lc-ink:#1b1230;
+    --lc-ink-2:#2c2148;
+    --lc-plum:#4b2a63;
+    --lc-pink:#e8a0c8;
+    --lc-pink-soft:#f7dcec;
+    --lc-mint:#7fd6c4;
+    --lc-paper:#faf6fb;
+    --lc-line:#e5d9ef;
+    --lc-muted:#7a6a8d;
+    --lc-shadow:0 14px 40px -18px rgba(43,20,70,.35);
+    --lc-radius:18px;
+    --lc-topbar-h:40px;
+    --lc-header-h:68px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;
+    color:var(--lc-ink);
+    background:var(--lc-paper);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit}
+  h1,h2,h3,h4{line-height:1.3;font-weight:800;letter-spacing:.5px}
+  section{scroll-margin-top:calc(var(--lc-topbar-h) + var(--lc-header-h) + 12px)}
+  .lc-wrap{width:min(1180px,92vw);margin:0 auto}
+
+  /* ============ 吸顶公告 + 页头 ============ */
+  .lc-sticky{
+    position:sticky;top:0;z-index:80;
+  }
+  .lc-announce{
+    height:var(--lc-topbar-h);
+    display:flex;align-items:center;
+    background:linear-gradient(90deg,#2c2148,#4b2a63 45%,#6b2f6e);
+    color:#f7dcec;font-size:13px;letter-spacing:.4px;
+    overflow:hidden;
+  }
+  .lc-announce .lc-wrap{display:flex;align-items:center;gap:14px}
+  .lc-announce-tag{
+    flex:none;background:var(--lc-mint);color:#10312b;
+    font-size:11px;font-weight:800;padding:2px 8px;border-radius:99px;letter-spacing:1px;
+  }
+  .lc-announce-track{flex:1;overflow:hidden;white-space:nowrap}
+  .lc-announce-track span{display:inline-block;padding-right:60px}
+  .lc-announce a{color:#fff;border-bottom:1px dashed rgba(255,255,255,.5);white-space:nowrap}
+  .lc-announce a:hover{color:var(--lc-mint)}
+
+  .lc-header{
+    background:rgba(250,246,251,.9);
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--lc-line);
+  }
+  .lc-header .lc-wrap{
+    height:var(--lc-header-h);display:flex;align-items:center;gap:22px;
+  }
+  .lc-brand{display:flex;align-items:center;gap:10px;flex:none}
+  .lc-brand-mark{width:38px;height:38px;flex:none}
+  .lc-brand-name{font-size:19px;font-weight:900;letter-spacing:1.5px;color:var(--lc-ink)}
+  .lc-brand-name em{font-style:normal;color:var(--lc-plum)}
+  .lc-brand-sub{display:block;font-size:10px;letter-spacing:3px;color:var(--lc-muted);font-weight:600}
+  .lc-nav{display:flex;gap:4px;margin-left:6px;flex-wrap:wrap}
+  .lc-nav a{
+    padding:6px 12px;border-radius:99px;font-size:14px;font-weight:600;color:var(--lc-ink-2);
+    transition:.22s;
+  }
+  .lc-nav a:hover,.lc-nav a.is-active{background:var(--lc-pink-soft);color:var(--lc-plum)}
+  .lc-search{
+    margin-left:auto;display:flex;align-items:center;gap:8px;
+    background:#fff;border:1px solid var(--lc-line);border-radius:99px;padding:6px 8px 6px 16px;
+    min-width:230px;
+  }
+  .lc-search input{
+    border:0;outline:0;background:transparent;font-size:13.5px;width:100%;color:var(--lc-ink);
+  }
+  .lc-search input::placeholder{color:#a292b3}
+  .lc-search button{
+    flex:none;background:var(--lc-plum);color:#fff;font-size:12.5px;font-weight:700;
+    padding:5px 14px;border-radius:99px;transition:.2s;
+  }
+  .lc-search button:hover{background:var(--lc-ink)}
+  .lc-search-tip{
+    font-size:12px;color:var(--lc-plum);margin-top:4px;min-height:16px;
+    padding-left:16px;
+  }
+  .lc-burger{display:none;flex:none;width:40px;height:40px;border-radius:12px;border:1px solid var(--lc-line);background:#fff}
+  .lc-burger span{display:block;width:18px;height:2px;background:var(--lc-ink);margin:4px auto;border-radius:2px;transition:.25s}
+  .lc-burger.is-open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+  .lc-burger.is-open span:nth-child(2){opacity:0}
+  .lc-burger.is-open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+  @media (max-width:960px){
+    .lc-nav{
+      display:none;position:absolute;left:0;right:0;top:calc(var(--lc-topbar-h) + var(--lc-header-h));
+      background:#fff;flex-direction:column;padding:12px;gap:2px;border-bottom:1px solid var(--lc-line);
+      box-shadow:var(--lc-shadow);
+    }
+    .lc-nav.is-open{display:flex}
+    .lc-nav a{width:100%;border-radius:10px}
+    .lc-burger{display:block;margin-left:auto}
+    .lc-search{margin-left:0;order:5;flex:1 1 100%;}
+    .lc-header .lc-wrap{flex-wrap:wrap;height:auto;padding:10px 0;gap:10px}
+    .lc-header{position:relative}
+    .lc-search{min-width:0}
+    .lc-header .lc-wrap > .lc-search{flex:1 1 100%}
+  }
+
+  /* ============ 首屏 ============ */
+  .lc-hero{
+    position:relative;overflow:hidden;
+    background:
+      radial-gradient(900px 460px at 82% 8%,rgba(232,160,200,.28),transparent 60%),
+      radial-gradient(700px 420px at 8% 92%,rgba(127,214,196,.24),transparent 62%),
+      linear-gradient(160deg,#1b1230,#2c2148 55%,#3a2350);
+    color:#f5eef9;
+    padding:64px 0 72px;
+  }
+  .lc-hero::after{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background-image:radial-gradient(rgba(255,255,255,.10) 1px,transparent 1px);
+    background-size:26px 26px;opacity:.5;
+  }
+  .lc-hero .lc-wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+  .lc-hero-badge{
+    display:inline-flex;align-items:center;gap:8px;
+    border:1px solid rgba(232,160,200,.55);color:#f7dcec;
+    font-size:12.5px;letter-spacing:1px;font-weight:700;
+    padding:5px 14px;border-radius:99px;margin-bottom:20px;
+    background:rgba(232,160,200,.10);
+  }
+  .lc-hero-badge i{width:7px;height:7px;border-radius:50%;background:var(--lc-mint);display:block;box-shadow:0 0 0 4px rgba(127,214,196,.22)}
+  .lc-hero h1{
+    font-size:clamp(38px,5.4vw,66px);letter-spacing:2px;font-weight:900;line-height:1.12;
+    background:linear-gradient(96deg,#fff 10%,#f7dcec 48%,#9fe9d9 96%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .lc-hero-slogan{
+    margin-top:16px;font-size:clamp(15px,1.6vw,18px);color:#dccbe9;font-weight:600;letter-spacing:.6px;
+  }
+  .lc-hero-slogan b{color:var(--lc-pink)}
+  .lc-hero-desc{
+    margin-top:20px;font-size:14.5px;color:#c9b8d8;max-width:560px;
+  }
+  .lc-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+  .lc-btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:11px 22px;border-radius:99px;font-weight:800;font-size:14px;
+    transition:.24s;
+  }
+  .lc-btn-primary{background:linear-gradient(120deg,var(--lc-pink),#c979b0);color:#2a1230;box-shadow:0 12px 28px -12px rgba(232,160,200,.9)}
+  .lc-btn-primary:hover{transform:translateY(-2px);box-shadow:0 18px 34px -12px rgba(232,160,200,.95)}
+  .lc-btn-ghost{border:1px solid rgba(255,255,255,.32);color:#f0e5f7}
+  .lc-btn-ghost:hover{background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.6)}
+  .lc-hero-stats{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:36px;
+    border-top:1px solid rgba(255,255,255,.13);padding-top:24px;
+  }
+  .lc-hero-stats b{display:block;font-size:clamp(22px,2.6vw,30px);color:#fff;font-weight:900;letter-spacing:1px}
+  .lc-hero-stats b i{font-style:normal;font-size:14px;color:var(--lc-pink);margin-left:3px}
+  .lc-hero-stats span{font-size:12.5px;color:#a996bd;letter-spacing:.5px}
+
+  /* 首屏主视觉 */
+  .lc-hero-visual{position:relative}
+  .lc-hero-frame{
+    border-radius:26px;overflow:hidden;border:1px solid rgba(255,255,255,.18);
+    box-shadow:0 40px 80px -30px rgba(0,0,0,.7);
+    aspect-ratio:4/4.4;background:#281838;
+  }
+  .lc-hero-frame img{width:100%;height:100%;object-fit:cover}
+  .lc-hero-float{
+    position:absolute;background:rgba(28,17,44,.82);border:1px solid rgba(232,160,200,.35);
+    backdrop-filter:blur(8px);border-radius:14px;padding:10px 14px;font-size:12.5px;color:#ecdcf4;
+    box-shadow:var(--lc-shadow);
+  }
+  .lc-hero-float.f1{left:-14px;top:16%;}
+  .lc-hero-float.f2{right:-10px;bottom:14%;}
+  .lc-hero-float b{color:var(--lc-mint);display:block;font-size:15px;font-weight:800}
+  @media (max-width:960px){
+    .lc-hero .lc-wrap{grid-template-columns:1fr;gap:34px}
+    .lc-hero-frame{aspect-ratio:16/11}
+    .lc-hero-float.f1{left:6px}
+    .lc-hero-float.f2{right:6px}
+  }
+
+  /* ============ 通用区块 ============ */
+  .lc-sec{padding:74px 0}
+  .lc-sec-head{margin-bottom:38px;max-width:760px}
+  .lc-eyebrow{
+    display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:800;
+    letter-spacing:2.5px;color:var(--lc-plum);text-transform:uppercase;margin-bottom:12px;
+  }
+  .lc-eyebrow::before{content:"";width:22px;height:2px;background:var(--lc-pink);border-radius:2px}
+  .lc-sec-head h2{font-size:clamp(25px,3.2vw,36px);letter-spacing:1px}
+  .lc-sec-head p{margin-top:12px;color:var(--lc-muted);font-size:14.5px}
+  .lc-sec-alt{background:linear-gradient(180deg,#f3ebf8,#faf6fb)}
+
+  /* ============ 品牌解析长文 ============ */
+  .lc-about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:start}
+  .lc-about-art{
+    border-radius:var(--lc-radius);overflow:hidden;position:relative;
+    box-shadow:var(--lc-shadow);aspect-ratio:4/5;background:#e8dff0;
+  }
+  .lc-about-art img{width:100%;height:100%;object-fit:cover}
+  .lc-about-art-tag{
+    position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.92);
+    border-radius:10px;padding:7px 13px;font-size:12px;font-weight:800;color:var(--lc-plum);letter-spacing:1px;
+  }
+  .lc-about-copy h3{font-size:20px;margin:22px 0 10px;color:var(--lc-ink-2)}
+  .lc-about-copy h3:first-child{margin-top:0}
+  .lc-about-copy p{color:#4f4160;font-size:14.5px;margin-bottom:12px;text-align:justify}
+  .lc-about-copy strong{color:var(--lc-plum)}
+  .lc-about-points{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+  .lc-about-points div{
+    background:#fff;border:1px solid var(--lc-line);border-radius:12px;padding:12px 14px;font-size:13px;
+    color:var(--lc-ink-2);font-weight:600;
+  }
+  .lc-about-points div span{color:var(--lc-plum);font-weight:900;margin-right:6px}
+  @media (max-width:900px){
+    .lc-about-grid{grid-template-columns:1fr}
+    .lc-about-art{aspect-ratio:16/10}
+  }
+
+  /* ============ 视频卡片 ============ */
+  .lc-video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .lc-vcard{
+    background:#fff;border:1px solid var(--lc-line);border-radius:var(--lc-radius);
+    overflow:hidden;display:flex;flex-direction:column;
+    transition:transform .28s,box-shadow .28s,border-color .28s;
+  }
+  .lc-vcard:hover{transform:translateY(-6px);box-shadow:var(--lc-shadow);border-color:#d6c3e6}
+  .lc-vcover{position:relative;aspect-ratio:16/9;overflow:hidden;background:#d8cbe6}
+  .lc-vcover img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+  .lc-vcard:hover .lc-vcover img{transform:scale(1.05)}
+  .lc-vcover::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,transparent 45%,rgba(20,10,32,.62));
+  }
+  .lc-vplay{
+    position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+    width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.9);
+    display:grid;place-items:center;z-index:2;box-shadow:0 6px 18px rgba(0,0,0,.28);
+    transition:.25s;
+  }
+  .lc-vcard:hover .lc-vplay{background:var(--lc-pink);transform:translate(-50%,-50%) scale(1.1)}
+  .lc-vplay svg{width:16px;height:16px;fill:#3a2350;margin-left:2px}
+  .lc-vtag{
+    position:absolute;left:10px;top:10px;z-index:2;
+    background:rgba(28,17,44,.75);color:#f7dcec;font-size:11px;font-weight:700;
+    padding:3px 9px;border-radius:99px;letter-spacing:.5px;backdrop-filter:blur(4px);
+  }
+  .lc-vmeta-in{position:absolute;left:12px;bottom:10px;z-index:2;color:#fff;font-size:11.5px;font-weight:600;letter-spacing:.4px}
+  .lc-vbody{padding:16px 17px 17px;display:flex;flex-direction:column;flex:1}
+  .lc-vbody h3{font-size:15.5px;line-height:1.45;color:var(--lc-ink)}
+  .lc-vbody p{font-size:13px;color:var(--lc-muted);margin-top:7px;flex:1}
+  .lc-vauthor{display:flex;align-items:center;gap:8px;margin-top:14px;padding-top:12px;border-top:1px dashed var(--lc-line)}
+  .lc-avatar{
+    width:28px;height:28px;border-radius:50%;flex:none;
+    display:grid;place-items:center;font-size:12px;font-weight:900;color:#fff;letter-spacing:0;
+  }
+  .lc-vauthor .lc-avatar{width:26px;height:26px;font-size:11.5px}
+  .lc-vauthor span{font-size:12.5px;color:var(--lc-ink-2);font-weight:700}
+  .lc-vstat{display:flex;align-items:center;gap:12px;margin-top:12px;font-size:12px;color:var(--lc-muted)}
+  .lc-vstat button{display:inline-flex;align-items:center;gap:4px;font-size:12px;color:var(--lc-muted);font-weight:700;transition:.18s;padding:2px 0}
+  .lc-vstat button:hover{color:var(--lc-plum)}
+  .lc-vstat button.is-on{color:#c05a92}
+  .lc-vstat svg{width:14px;height:14px;fill:currentColor}
+  .lc-vstat .lc-fav svg{fill:none;stroke:currentColor;stroke-width:1.8}
+  .lc-vstat .lc-fav.is-on svg{fill:currentColor;stroke:currentColor}
+  .lc-vstat .lc-spacer{flex:1}
+
+  @media (max-width:980px){.lc-video-grid{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:620px){.lc-video-grid{grid-template-columns:1fr}}
+
+  /* ============ 焦点大卡 ============ */
+  .lc-focus-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:24px}
+  .lc-focus-main,.lc-focus-side{
+    position:relative;border-radius:var(--lc-radius);overflow:hidden;background:#281838;
+    box-shadow:var(--lc-shadow);
+  }
+  .lc-focus-main{aspect-ratio:16/10}
+  .lc-focus-main img,.lc-focus-side img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+  .lc-focus-main::after,.lc-focus-side::after{
+    content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,10,32,.05) 30%,rgba(20,10,32,.86));
+  }
+  .lc-focus-txt{position:absolute;left:0;right:0;bottom:0;padding:22px 24px;z-index:2;color:#fff}
+  .lc-focus-txt .lc-vtag{position:static;display:inline-block;margin-bottom:10px}
+  .lc-focus-txt h3{font-size:22px;letter-spacing:.6px}
+  .lc-focus-txt p{font-size:13px;color:#d6c7e4;margin-top:8px}
+  .lc-focus-txt .lc-vmeta-in{position:static;margin-top:12px;color:#b9a6cc}
+  .lc-focus-side{display:grid;grid-template-rows:1fr 1fr;gap:24px;background:transparent;box-shadow:none}
+  .lc-focus-side .lc-focus-mini{position:relative;border-radius:var(--lc-radius);overflow:hidden;background:#281838;box-shadow:var(--lc-shadow)}
+  .lc-focus-side .lc-focus-mini::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,10,32,.05) 35%,rgba(20,10,32,.85))}
+  .lc-focus-mini .lc-focus-txt{padding:14px 18px}
+  .lc-focus-mini .lc-focus-txt h3{font-size:15.5px}
+  .lc-focus-mini .lc-focus-txt p{display:none}
+  @media (max-width:860px){
+    .lc-focus-grid{grid-template-columns:1fr}
+    .lc-focus-main{aspect-ratio:16/11}
+    .lc-focus-side{grid-template-rows:none;grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:560px){.lc-focus-side{grid-template-columns:1fr}}
+
+  /* ============ 创作者 ============ */
+  .lc-creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .lc-creator{
+    background:#fff;border:1px solid var(--lc-line);border-radius:var(--lc-radius);
+    padding:24px 20px;text-align:center;transition:.28s;
+  }
+  .lc-creator:hover{transform:translateY(-5px);box-shadow:var(--lc-shadow);border-color:#d6c3e6}
+  .lc-creator .lc-avatar{width:66px;height:66px;font-size:23px;margin:0 auto 12px;box-shadow:0 8px 20px -8px rgba(75,42,99,.55)}
+  .lc-creator h3{font-size:16px}
+  .lc-creator .lc-crole{font-size:11.5px;font-weight:800;letter-spacing:1.4px;color:var(--lc-plum);margin-top:4px}
+  .lc-creator p{font-size:12.5px;color:var(--lc-muted);margin-top:10px;min-height:56px}
+  .lc-ccounts{display:flex;justify-content:center;gap:16px;margin-top:12px;padding-top:12px;border-top:1px dashed var(--lc-line);font-size:11.5px;color:var(--lc-muted)}
+  .lc-ccounts b{display:block;color:var(--lc-ink);font-size:14px}
+  .lc-creator-btn{margin-top:14px;width:100%;border-radius:99px;padding:7px;font-size:12.5px;font-weight:800;background:var(--lc-pink-soft);color:var(--lc-plum);transition:.2s}
+  .lc-creator-btn:hover{background:var(--lc-plum);color:#fff}
+  @media (max-width:980px){.lc-creator-grid{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:520px){.lc-creator-grid{grid-template-columns:1fr}}
+
+  /* ============ 专题 ============ */
+  .lc-topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .lc-topic{
+    background:#fff;border-radius:var(--lc-radius);overflow:hidden;border:1px solid var(--lc-line);
+    display:flex;flex-direction:column;transition:.26s;
+  }
+  .lc-topic:hover{box-shadow:var(--lc-shadow);transform:translateY(-4px)}
+  .lc-topic-cover{aspect-ratio:16/8;position:relative;overflow:hidden;background:#e3d7ee}
+  .lc-topic-cover img{width:100%;height:100%;object-fit:cover}
+  .lc-topic-state{
+    position:absolute;right:10px;top:10px;font-size:11px;font-weight:800;
+    padding:3px 9px;border-radius:99px;background:rgba(255,255,255,.92);color:var(--lc-plum);letter-spacing:.5px;
+  }
+  .lc-topic-state.is-live{background:var(--lc-mint);color:#10312b}
+  .lc-topic-body{padding:18px;flex:1;display:flex;flex-direction:column}
+  .lc-topic-body h3{font-size:16.5px}
+  .lc-topic-body p{font-size:13px;color:var(--lc-muted);margin-top:8px;flex:1}
+  .lc-topic-foot{display:flex;align-items:center;justify-content:space-between;margin-top:14px;font-size:12px;color:var(--lc-plum);font-weight:700}
+  .lc-topic-foot span{color:var(--lc-muted);font-weight:600}
+  @media (max-width:900px){.lc-topic-grid{grid-template-columns:1fr 1fr}}
+  @media (max-width:600px){.lc-topic-grid{grid-template-columns:1fr}}
+
+  /* ============ 作品墙 ============ */
+  .lc-wall{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;grid-auto-rows:96px}
+  .lc-wall-item{position:relative;border-radius:14px;overflow:hidden;background:#e3d7ee}
+  .lc-wall-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+  .lc-wall-item:hover img{transform:scale(1.06)}
+  .lc-wall-item span{
+    position:absolute;left:10px;bottom:9px;font-size:11.5px;font-weight:700;color:#fff;
+    background:rgba(20,10,32,.6);padding:2px 9px;border-radius:99px;backdrop-filter:blur(4px);
+  }
+  .w-a{grid-column:span 5;grid-row:span 2}
+  .w-b{grid-column:span 4;grid-row:span 2}
+  .w-c{grid-column:span 3;grid-row:span 1}
+  .w-d{grid-column:span 3;grid-row:span 1}
+  .w-e{grid-column:span 2}
+  .w-f{grid-column:span 2}
+  .w-g{grid-column:span 2}
+  .w-h{grid-column:span 2}
+  .w-i{grid-column:span 4;grid-row:span 2}
+  .w-j{grid-column:span 4}
+  .w-k{grid-column:span 4}
+  @media (max-width:900px){
+    .lc-wall{grid-auto-rows:84px}
+    .w-a,.w-b,.w-i{grid-column:span 6}
+  }
+  @media (max-width:560px){
+    .lc-wall{grid-template-columns:repeat(6,1fr)}
+    .w-a,.w-b,.w-i{grid-column:span 6}
+    .w-c,.w-d{grid-column:span 3}
+    .w-e,.w-f,.w-g,.w-h{grid-column:span 3}
+    .w-j,.w-k{grid-column:span 6}
+  }
+
+  /* ============ 评价 ============ */
+  .lc-review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .lc-review{
+    background:#fff;border:1px solid var(--lc-line);border-radius:var(--lc-radius);padding:20px 20px 18px;
+    display:flex;flex-direction:column;gap:12px;
+  }
+  .lc-review-top{display:flex;align-items:center;gap:10px}
+  .lc-review-top .lc-avatar{width:36px;height:36px;font-size:13px}
+  .lc-review-top b{font-size:13.5px;display:block}
+  .lc-review-top small{font-size:11px;color:var(--lc-muted)}
+  .lc-review p{font-size:13px;color:#4f4160;flex:1}
+  .lc-review-tags{display:flex;gap:6px;flex-wrap:wrap}
+  .lc-review-tags i{
+    font-style:normal;font-size:11px;font-weight:700;color:var(--lc-plum);
+    background:var(--lc-pink-soft);padding:2px 9px;border-radius:99px;
+  }
+  .lc-stars{color:#e0a53c;font-size:12px;letter-spacing:2px}
+  @media (max-width:900px){.lc-review-grid{grid-template-columns:1fr 1fr}}
+  @media (max-width:600px){.lc-review-grid{grid-template-columns:1fr}}
+
+  /* ============ 动态 & 榜单 ============ */
+  .lc-split{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:start}
+  .lc-news{display:flex;flex-direction:column;gap:0}
+  .lc-news-item{
+    display:flex;gap:16px;padding:18px 0;border-bottom:1px dashed var(--lc-line);
+  }
+  .lc-news-item:first-child{padding-top:0}
+  .lc-news-date{
+    flex:none;width:62px;text-align:center;background:#fff;border:1px solid var(--lc-line);
+    border-radius:12px;padding:8px 0;font-weight:900;color:var(--lc-plum);font-size:17px;line-height:1.1;
+  }
+  .lc-news-date small{display:block;font-size:10px;color:var(--lc-muted);font-weight:700;letter-spacing:1px}
+  .lc-news-item h3{font-size:14.5px}
+  .lc-news-item p{font-size:12.5px;color:var(--lc-muted);margin-top:4px}
+  .lc-news-item .lc-nd-tag{font-size:11px;font-weight:800;color:var(--lc-plum);letter-spacing:1px}
+
+  .lc-rank{background:#fff;border:1px solid var(--lc-line);border-radius:var(--lc-radius);padding:8px 8px 8px}
+  .lc-rank-item{
+    display:flex;align-items:center;gap:12px;padding:12px 12px;border-radius:12px;transition:.2s;
+  }
+  .lc-rank-item:hover{background:var(--lc-pink-soft)}
+  .lc-rank-no{
+    flex:none;width:24px;height:24px;border-radius:8px;display:grid;place-items:center;
+    font-size:12px;font-weight:900;background:#f0e6f7;color:var(--lc-plum);
+  }
+  .lc-rank-item:nth-child(1) .lc-rank-no{background:linear-gradient(135deg,#e8a0c8,#c979b0);color:#fff}
+  .lc-rank-item:nth-child(2) .lc-rank-no{background:linear-gradient(135deg,#7fd6c4,#4bab98);color:#fff}
+  .lc-rank-item:nth-child(3) .lc-rank-no{background:linear-gradient(135deg,#b0a0e8,#7d67c9);color:#fff}
+  .lc-rank-txt{flex:1;min-width:0}
+  .lc-rank-txt b{font-size:13.5px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .lc-rank-txt small{font-size:11.5px;color:var(--lc-muted)}
+  .lc-rank-hot{font-size:11.5px;font-weight:800;color:#c05a92;flex:none}
+  @media (max-width:820px){.lc-split{grid-template-columns:1fr}}
+
+  /* ============ 灵感工具 ============ */
+  .lc-ideas{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .lc-idea{
+    border-radius:var(--lc-radius);padding:22px;position:relative;overflow:hidden;
+    background:linear-gradient(150deg,#2c2148,#4b2a63);color:#f0e5f7;
+  }
+  .lc-idea:nth-child(2){background:linear-gradient(150deg,#3a2350,#6b2f6e)}
+  .lc-idea:nth-child(3){background:linear-gradient(150deg,#204436,#2f6b58)}
+  .lc-idea-num{font-size:34px;font-weight:900;color:rgba(255,255,255,.16);line-height:1;letter-spacing:1px}
+  .lc-idea h3{font-size:16px;margin-top:10px}
+  .lc-idea p{font-size:13px;color:#cdbddd;margin-top:8px}
+  .lc-idea .lc-tagline{
+    display:inline-block;margin-top:14px;font-size:11.5px;font-weight:800;letter-spacing:1px;
+    border:1px solid rgba(255,255,255,.3);padding:3px 10px;border-radius:99px;
+  }
+  @media (max-width:880px){.lc-ideas{grid-template-columns:1fr}}
+
+  /* ============ 合作 & FAQ ============ */
+  .lc-partners{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+  .lc-partner{
+    background:#fff;border:1px solid var(--lc-line);border-radius:14px;
+    padding:18px 12px;text-align:center;font-size:13px;font-weight:800;color:var(--lc-ink-2);
+    letter-spacing:.5px;transition:.24s;
+  }
+  .lc-partner:hover{border-color:#d6c3e6;box-shadow:var(--lc-shadow);transform:translateY(-3px)}
+  .lc-partner small{display:block;font-size:10.5px;color:var(--lc-muted);font-weight:600;margin-top:4px;letter-spacing:1px}
+  @media (max-width:820px){.lc-partners{grid-template-columns:repeat(3,1fr)}}
+  @media (max-width:520px){.lc-partners{grid-template-columns:1fr 1fr}}
+
+  .lc-faq{display:flex;flex-direction:column;gap:10px}
+  .lc-faq details{
+    background:#fff;border:1px solid var(--lc-line);border-radius:14px;overflow:hidden;
+    transition:.2s;
+  }
+  .lc-faq details[open]{border-color:#d6c3e6;box-shadow:var(--lc-shadow)}
+  .lc-faq summary{
+    list-style:none;cursor:pointer;padding:15px 18px;font-weight:800;font-size:14px;
+    display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--lc-ink-2);
+  }
+  .lc-faq summary::-webkit-details-marker{display:none}
+  .lc-faq summary::after{content:"+";font-size:19px;color:var(--lc-plum);font-weight:400;line-height:1;transition:.2s}
+  .lc-faq details[open] summary::after{transform:rotate(45deg)}
+  .lc-faq .lc-faq-body{padding:0 18px 16px;font-size:13.5px;color:#4f4160}
+
+  /* ============ 联系 / 投稿 ============ */
+  .lc-contact{
+    background:linear-gradient(140deg,#1b1230,#3a2350 60%,#4b2a63);
+    color:#f0e5f7;border-radius:24px;padding:48px 42px;
+    display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;
+    position:relative;overflow:hidden;
+  }
+  .lc-contact::before{
+    content:"";position:absolute;right:-80px;top:-80px;width:320px;height:320px;border-radius:50%;
+    background:radial-gradient(circle,rgba(232,160,200,.35),transparent 70%);
+  }
+  .lc-contact h2{font-size:clamp(24px,3vw,32px);color:#fff}
+  .lc-contact p{color:#c9b8d8;font-size:14px;margin-top:12px}
+  .lc-contact-list{display:flex;flex-direction:column;gap:12px;margin-top:24px;font-size:13.5px;color:#dccbe9}
+  .lc-contact-list div{display:flex;gap:10px;align-items:flex-start}
+  .lc-contact-list b{color:var(--lc-mint);flex:none;font-weight:800}
+  .lc-contact-actions{display:flex;flex-direction:column;gap:12px;position:relative;z-index:2}
+  .lc-contact-actions .lc-btn{justify-content:center}
+  .lc-btn-light{background:#fff;color:var(--lc-plum)}
+  .lc-btn-light:hover{background:var(--lc-pink-soft)}
+  @media (max-width:820px){.lc-contact{grid-template-columns:1fr;padding:36px 24px}}
+
+  /* ============ 页脚 ============ */
+  .lc-footer{background:#150e26;color:#a996bd;padding:56px 0 0;font-size:13px}
+  .lc-footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;padding-bottom:38px}
+  .lc-footer h4{font-size:14px;color:#fff;margin-bottom:14px;letter-spacing:1px}
+  .lc-footer a{display:block;padding:4px 0;transition:.2s}
+  .lc-footer a:hover{color:var(--lc-pink)}
+  .lc-footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+  .lc-footer-brand b{color:#fff;font-size:18px;letter-spacing:1.5px}
+  .lc-footer-brand .lc-brand-mark{width:32px;height:32px}
+  .lc-footer p{font-size:12.5px;line-height:1.85;color:#8f7ea5}
+  .lc-footer-bottom{
+    border-top:1px solid rgba(255,255,255,.1);padding:18px 0 26px;
+    display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;font-size:12px;color:#7e6d93;
+  }
+  @media (max-width:820px){.lc-footer-grid{grid-template-columns:1fr 1fr}}
+  @media (max-width:520px){.lc-footer-grid{grid-template-columns:1fr}}
+
+  /* ============ 返回顶部 / Toast / 弹窗 ============ */
+  .lc-top-btn{
+    position:fixed;right:22px;bottom:22px;z-index:90;
+    width:44px;height:44px;border-radius:50%;background:var(--lc-plum);color:#fff;
+    display:grid;place-items:center;box-shadow:0 14px 30px -10px rgba(75,42,99,.8);
+    opacity:0;pointer-events:none;transform:translateY(10px);transition:.28s;
+  }
+  .lc-top-btn.is-show{opacity:1;pointer-events:auto;transform:none}
+  .lc-top-btn:hover{background:var(--lc-ink)}
+  .lc-top-btn svg{width:17px;height:17px;fill:#fff}
+
+  .lc-toast{
+    position:fixed;left:50%;bottom:34px;transform:translate(-50%,16px);z-index:120;
+    background:rgba(27,18,48,.95);color:#f7dcec;font-size:13px;font-weight:700;
+    padding:10px 20px;border-radius:99px;letter-spacing:.5px;
+    opacity:0;pointer-events:none;transition:.28s;box-shadow:0 12px 30px rgba(0,0,0,.35);
+  }
+  .lc-toast.is-show{opacity:1;transform:translate(-50%,0)}
+
+  .lc-modal{
+    position:fixed;inset:0;z-index:110;display:grid;place-items:center;padding:20px;
+    background:rgba(18,10,30,.62);backdrop-filter:blur(3px);
+    opacity:0;pointer-events:none;transition:.24s;
+  }
+  .lc-modal.is-show{opacity:1;pointer-events:auto}
+  .lc-modal-card{
+    background:#fff;border-radius:20px;width:min(480px,94vw);padding:26px 24px;
+    box-shadow:0 30px 70px -20px rgba(0,0,0,.5);transform:translateY(12px);transition:.26s;
+  }
+  .lc-modal.is-show .lc-modal-card{transform:none}
+  .lc-modal-card h3{font-size:19px;margin-bottom:6px}
+  .lc-modal-card .lc-modal-sub{font-size:12.5px;color:var(--lc-muted);margin-bottom:16px}
+  .lc-modal-card textarea,.lc-modal-card input{
+    width:100%;border:1px solid var(--lc-line);border-radius:12px;padding:11px 14px;
+    font-size:13.5px;font-family:inherit;outline:0;margin-bottom:12px;resize:vertical;
+  }
+  .lc-modal-card textarea:focus,.lc-modal-card input:focus{border-color:var(--lc-pink)}
+  .lc-modal-card .lc-modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:6px}
+  .lc-modal-card .lc-btn{padding:9px 18px;font-size:13px}
+  .lc-btn-plain{border:1px solid var(--lc-line);color:var(--lc-ink-2)}
+  .lc-btn-plain:hover{background:#f6f1fa}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶：公告条 + 页头 -->
+<div class="lc-sticky">
+  <div class="lc-announce">
+    <div class="lc-wrap">
+      <span class="lc-announce-tag">官方发布</span>
+      <div class="lc-announce-track">
+        <span>蕾丝猫 秀人网 11 月新增「城市光影计划」12 支原创影像，首批创作者招募已开启 · <a href="#lc-join">立即报名</a> · 年度口碑榜投票通道同步开放 · 第 4 期专题《柔光与轮廓》已上线</span>
+      </div>
+    </div>
+  </div>
+  <header class="lc-header">
+    <div class="lc-wrap">
+      <a class="lc-brand" href="#lc-top" aria-label="蕾丝猫 秀人网 官方首页">
+        <svg class="lc-brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#2c2148"/>
+          <circle cx="32" cy="28" r="13" fill="none" stroke="#e8a0c8" stroke-width="3"/>
+          <path d="M22 22l-7-8 12 4zM42 22l7-8-12 4z" fill="#e8a0c8"/>
+          <circle cx="27" cy="27" r="2.2" fill="#e8a0c8"/>
+          <circle cx="37" cy="27" r="2.2" fill="#e8a0c8"/>
+          <path d="M24 46q8 10 16 0" stroke="#7fd6c4" stroke-width="3" fill="none" stroke-linecap="round"/>
+        </svg>
+        <span class="lc-brand-name">蕾丝猫<em>·</em>秀人网
+          <span class="lc-brand-sub">LACE CAT VISUAL</span>
+        </span>
+      </a>
+      <nav class="lc-nav" id="lcNav" aria-label="主导航">
+        <a href="#lc-top" class="is-active">首页</a>
+        <a href="#lc-focus">焦点影像</a>
+        <a href="#lc-topics">专题企划</a>
+        <a href="#lc-creators">创作者</a>
+        <a href="#lc-wall">作品墙</a>
+        <a href="#lc-news">企业动态</a>
+        <a href="#lc-join">联系投稿</a>
+      </nav>
+      <div class="lc-search" role="search">
+        <input type="search" id="lcSearchInput" placeholder="搜索影像 / 创作者 / 专题" aria-label="站内搜索">
+        <button type="button" id="lcSearchBtn">搜索</button>
+      </div>
+      <button class="lc-burger" id="lcBurger" type="button" aria-label="展开导航" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+</div>
+
+<div class="lc-search-tip lc-wrap" id="lcSearchTip" aria-live="polite"></div>
+
+<main id="lc-top">
+
+  <!-- 首屏 -->
+  <section class="lc-hero" aria-labelledby="lcHeroTitle">
+    <div class="lc-wrap">
+      <div>
+        <span class="lc-hero-badge"><i></i>蕾丝猫 秀人网 · 官方网站</span>
+        <h1 id="lcHeroTitle">蕾丝猫 秀人网</h1>
+        <p class="lc-hero-slogan">以光为笔，以人为景 —— 一座<b>专注原创人像影像</b>的品牌视频门户</p>
+        <p class="lc-hero-desc">
+          作为深耕人像影像与生活美学的企业级内容平台，蕾丝猫 秀人网官方网站持续为摄影创作者、模特、影像团队与品牌方搭建高品质内容生态。我们坚持原创、正版、高清的专业标准，用真实的镜头语言记录个体之美与城市温度，让每一段光影都值得被认真对待。
+        </p>
+        <div class="lc-hero-actions">
+          <a class="lc-btn lc-btn-primary" href="#lc-focus">进入焦点影像
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="lc-btn lc-btn-ghost" href="#lc-join">创作者报名</a>
+          <button class="lc-btn lc-btn-ghost" type="button" id="lcShareTop">分享官网</button>
+        </div>
+        <div class="lc-hero-stats">
+          <div><b>2,860<i>+</i></b><span>原创影像作品</span></div>
+          <div><b>420<i>位</i></b><span>入驻创作者</span></div>
+          <div><b>1.7<i>亿</i></b><span>累计内容触达</span></div>
+        </div>
+      </div>
+      <div class="lc-hero-visual">
+        <div class="lc-hero-frame">
+          <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 660'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234b2a63'/%3E%3Cstop offset='1' stop-color='%231b1230'/%3E%3C/linearGradient%3E%3CradialGradient id='g2' cx='0.7' cy='0.25' r='0.6'%3E%3Cstop offset='0' stop-color='%23e8a0c8' stop-opacity='0.55'/%3E%3Cstop offset='1' stop-color='%23e8a0c8' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='600' height='660' fill='url(%23g1)'/%3E%3Crect width='600' height='660' fill='url(%23g2)'/%3E%3Ccircle cx='300' cy='258' r='118' fill='none' stroke='%23f7dcec' stroke-width='2' opacity='0.55'/%3E%3Ccircle cx='300' cy='258' r='88' fill='%23f7dcec' opacity='0.13'/%3E%3Cpath d='M212 214l-46-56 78 24zM388 214l46-56-78 24z' fill='%23e8a0c8' opacity='0.9'/%3E%3Cpath d='M300 340q-26 44-62 44 44-6 62-44zM300 340q26 44 62 44-44-6-62-44z' fill='%237fd6c4' opacity='0.6'/%3E%3Cpath d='M232 470q68 88 136 0' stroke='%237fd6c4' stroke-width='6' fill='none' stroke-linecap='round' opacity='0.8'/%3E%3Cg fill='%23f7dcec' opacity='0.5'%3E%3Ccircle cx='122' cy='112' r='4'/%3E%3Ccircle cx='486' cy='150' r='3'/%3E%3Ccircle cx='150' cy='540' r='3'/%3E%3Ccircle cx='470' cy='560' r='4'/%3E%3C/g%3E%3Cpath d='M0 596q150-70 300 0t300 0v64H0z' fill='%23120a20' opacity='0.55'/%3E%3C/svg%3E" alt="蕾丝猫 秀人网 品牌主视觉：紫调光影与人像轮廓构成的主画面" width="600" height="660">
+        </div>
+        <div class="lc-hero-float f1"><b>本周新增 46 支</b>原创影像 · 官方发布</div>
+        <div class="lc-hero-float f2"><b>第 4 期专题</b>《柔光与轮廓》已上线</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌深度解析 -->
+  <section class="lc-sec" id="lc-about" aria-labelledby="lcAboutTitle">
+    <div class="lc-wrap">
+      <div class="lc-sec-head">
+        <span class="lc-eyebrow">Brand Story · 品牌解析</span>
+        <h2 id="lcAboutTitle">关于蕾丝猫 秀人网：一个持续成长的原创影像社区</h2>
+        <p>从一支短片出发，到一套完整的内容生态。我们用十年的耐心，做一件与光有关的事。</p>
+      </div>
+      <div class="lc-about-grid">
+        <div class="lc-about-art">
+          <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 600'%3E%3Cdefs%3E%3ClinearGradient id='a1' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23f7dcec'/%3E%3Cstop offset='1' stop-color='%23c9a7dd'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='600' fill='url(%23a1)'/%3E%3Ccircle cx='240' cy='230' r='110' fill='%234b2a63' opacity='0.88'/%3E%3Ccircle cx='240' cy='230' r='86' fill='none' stroke='%23f7dcec' stroke-width='3' opacity='0.7'/%3E%3Cpath d='M168 190l-38-46 64 20zM312 190l38-46-64 20z' fill='%232c2148'/%3E%3Ccircle cx='212' cy='222' r='7' fill='%237fd6c4'/%3E%3Ccircle cx='268' cy='222' r='7' fill='%237fd6c4'/%3E%3Cpath d='M216 272q24 26 48 0' stroke='%23f7dcec' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Crect x='60' y='400' width='360' height='10' rx='5' fill='%232c2148' opacity='0.5'/%3E%3Crect x='100' y='430' width='280' height='8' rx='4' fill='%232c2148' opacity='0.35'/%3E%3Crect x='140' y='458' width='200' height='8' rx='4' fill='%232c2148' opacity='0.25'/%3E%3Cpath d='M0 540q120-60 240 0t240 0v60H0z' fill='%234b2a63' opacity='0.35'/%3E%3C/svg%3E" alt="蕾丝猫 秀人网 品牌故事视觉：柔和粉紫调人物剪影与线条构成" width="480" height="600">
+          <span class="lc-about-art-tag">Brand Since 2016</span>
+        </div>
+        <div class="lc-about-copy">
+          <h3>我们为什么叫「蕾丝猫」</h3>
+          <p>蕾丝的细腻，猫的敏锐。这两个意象拼在一起，恰好描述了我们对影像的理解：既要经得起近距离观看的细节质感，也要有捕捉瞬间的直觉。蕾丝猫 秀人网自 2016 年上线以来，始终围绕「人」这一核心展开内容策划，把人像摄影、城市记录、生活美学与影像叙事放进同一套内容框架里。</p>
+          <p>作为行业领先的垂直领域影像平台，我们不追热点式的流量堆叠，而是以<strong>工匠精神</strong>对待每一条作品：从选题会、脚本打磨、拍摄执行到后期调色，全流程由内容团队与创作者共同把控。每一条进入首页推荐的作品，都需要通过画质、版权、叙事完整度三重审核，这也是我们被称为「用户首选」的原因之一。</p>
+
+          <h3>品牌定位与关键词解析</h3>
+          <p>「蕾丝猫 秀人网」这组关键词，可以拆解为三个层次来理解。<strong>第一层是「蕾丝」</strong>，指向细密的质感与审美上的克制。在人像影像里，蕾丝往往出现在服装细节、道具纹理与光斑的缝隙里，它代表一种不喧哗的高级感。我们的内容选品逻辑与此一致：不追求夸张的视觉冲击，而更看重画面里的呼吸感与细节层次，这也是平台持续强调「品质」与「匠心」的来源。</p>
+          <p><strong>第二层是「猫」</strong>，指向敏锐、独立与陪伴。猫的观察方式是从容的、有距离感的，却始终在场。我们希望平台上的创作者也保有这样的观察姿态：不打扰被拍摄者，而是安静的陪伴并记录。这种关系也塑造了社区的调性——<strong>真实、温暖、有力量</strong>。用户在评论区分享的往往不是惊叹，而是共鸣，这正是社区活力的来源。</p>
+          <p><strong>第三层是「秀人网」</strong>，指向展示与连接。秀，是呈现；人，是对象；网，是关系。三者叠加，构成了一个以人物影像为核心的展示网络。我们通过专题企划、创作者矩阵、作品墙与动态榜单，把分散的影像连接成可被浏览、可被检索、可被讨论的内容生态。官方网站上的每一个入口，最终都指向同一个目标：让好作品被看见，让创作者被记住。</p>
+
+          <h3>内容生态如何运转</h3>
+          <p>平台采用「官方策划 + 创作者共创 + 用户参与」的三层结构。官方团队每季度推出 3–5 个专题企划，给出统一的主题与视觉基调；签约创作者围绕主题提交作品，经过编辑部初审与同行评审后进入推荐位；普通用户则通过投票、评论、收藏与分享参与内容分发。所有环节的数据都公开透明，榜单每周更新一次，避免单一指标主导推荐结果。</p>
+          <p>在版权层面，蕾丝猫 秀人网坚持正版授权与原创优先。所有上架作品需提供授权说明，平台为创作者提供版权登记协助与侵权投诉通道。我们相信，只有把创作者的权益放在前面，内容生态才能长久。这也是「值得信赖」四个字在平台上的具体含义，而不是一句口号。</p>
+
+          <h3>关于未来</h3>
+          <p>接下来一年，我们会把重心放在三件事上：其一，继续深耕人像影像这一垂直领域，把专题做得更深；其二，开放更多工具能力，包括脚本灵感、剪辑思路与封面建议，降低新创作者的入门门槛；其三，推动线下影像展与创作者见面会，让社区关系从屏幕延伸到真实空间。蕾丝猫 秀人网希望成为一所「可以被依靠的影像学校」，陪伴每一位创作者成长。</p>
+
+          <div class="lc-about-points">
+            <div><span>01</span>原创优先，正版授权</div>
+            <div><span>02</span>三重审核，品质把控</div>
+            <div><span>03</span>公开榜单，透明分发</div>
+            <div><span>04</span>创作者权益先行</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点影像 -->
+  <section class="lc-sec lc-sec-alt" id="lc-focus" aria-labelledby="lcFocusTitle">
+    <div class="lc-wrap">
+      <div class="lc-sec-head">
+        <span class="lc-eyebrow">Focus · 焦点影像</span>
+        <h2 id="lcFocusTitle">本周焦点：被光线认真对待的六组画面</h2>
+        <p>编辑部从 46 支新作中选出六组，覆盖城市、室内、自然光与棚拍四类场景，呈现蕾丝猫 秀人网本期的选片标准。</p>
+      </div>
+      <div class="lc-focus-grid">
+        <article class="lc-focus-main">
+          <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232c2148'/%3E%3Cstop offset='.6' stop-color='%236b2f6e'/%3E%3Cstop offset='1' stop-color='%23e8a0c8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='500' fill='url(%23f1)'/%3E%3Ccircle cx='560' cy='180' r='130' fill='%23f7dcec' opacity='0.22'/%3E%3Cpath d='M0 380q200-90 400-10t400-30v160H0z' fill='%231b1230' opacity='0.6'/%3E%3Cg stroke='%23f7dcec' stroke-opacity='0.5' stroke-width='2'%3E%3Cpath d='M120 80v340M260 60v360M700 100v300'/%3E%3C/g%3E%3Ccircle cx='260' cy='200' r='52' fill='none' stroke='%237fd6c4' stroke-width='3'/%3E%3C/svg%3E" alt="焦点影像《午夜橱窗》：城市夜景中的柔光人像" width="800" height="500">
+          <div class="lc-focus-txt">
+            <span class="lc-vtag">本周主推</span>
+            <h3>《午夜橱窗》：在打烊的街角，等一束刚好落下的光</h3>
+            <p>摄影师阿雾用 35mm 定焦记录凌晨两点的老城区，八分钟短片没有旁白，只有环境声与脚步声。</p>
+            <div class="lc-vmeta-in">创作者 阿雾 · 时长 08:12 · 1.2 万次收藏</div>
+          </div>
+        </article>
+        <div class="lc-focus-side">
+          <article class="lc-focus-mini lc-focus-main" style="aspect-ratio:auto">
+            <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 300'%3E%3Cdefs%3E%3ClinearGradient id='f2' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%237fd6c4'/%3E%3Cstop offset='1' stop-color='%232c6b5e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='300' fill='url(%23f2)'/%3E%3Ccircle cx='440' cy='140' r='96' fill='%23f7dcec' opacity='0.3'/%3E%3Cpath d='M0 230q150-70 300-10t300-20v100H0z' fill='%231b1230' opacity='0.5'/%3E%3Cpath d='M60 60h120M60 90h90M60 120h150' stroke='%23ffffff' stroke-opacity='0.5' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E" alt="焦点影像《青绿之间》：自然光下的户外人像短记" width="600" height="300">
+            <div class="lc-focus-txt">
+              <span class="lc-vtag">自然光</span>
+              <h3>《青绿之间》户外人像短记</h3>
+              <p>清晨六点的湿地公园，一组关于呼吸的影像。</p>
+            </div>
+          </article>
+          <article class="lc-focus-mini lc-focus-main" style="aspect-ratio:auto">
+            <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 300'%3E%3Cdefs%3E%3ClinearGradient id='f3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f0d7b8'/%3E%3Cstop offset='1' stop-color='%23c979b0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='300' fill='url(%23f3)'/%3E%3Crect x='180' y='60' width='240' height='180' rx='16' fill='%232c2148' opacity='0.2'/%3E%3Ccircle cx='300' cy='150' r='58' fill='none' stroke='%232c2148' stroke-width='3' opacity='0.6'/%3E%3Cpath d='M240 190q60 56 120 0' stroke='%232c2148' stroke-width='4' fill='none' opacity='0.6' stroke-linecap='round'/%3E%3C/svg%3E" alt="焦点影像《棚内柔光》人物肖像练习与布光拆解" width="600" height="300">
+            <div class="lc-focus-txt">
+              <span class="lc-vtag">棚拍教程</span>
+              <h3>《棚内柔光》布光拆解</h3>
+              <p>一盏主灯如何做出三种情绪。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门视频流 -->
+  <section class="lc-sec" id="lc-videos" aria-labelledby="lcVideosTitle">
+    <div class="lc-wrap">
+      <div class="lc-sec-head">
+        <span class="lc-eyebrow">Video Feed · 精品内容</span>
+        <h2 id="lcVideosTitle">正在被反复观看的九支作品</h2>
+        <p>由编辑部推荐与用户投票共同产生的热门视频流，每周一更新。点击卡片可点赞、收藏，或复制链接分享给同好。</p>
+      </div>
+      <div class="lc-video-grid" id="lcVideoGrid">
+
+        <article class="lc-vcard">
+          <div class="lc-vcover">
+            <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='v1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234b2a63'/%3E%3Cstop offset='1' stop-color='%231b1230'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23v1)'/%3E%3Ccircle cx='470' cy='120' r='88' fill='%23e8a0c8' opacity='0.36'/%3E%3Cpath d='M0 280q160-70 320-10t320-20v110H0z' fill='%23120a20' opacity='0.65'/%3E%3Cg stroke='%23f7dcec' stroke-opacity='0.45' stroke-width='2'%3E%3Cpath d='M90 60v240M180 80v220M560 70v230'/%3E%3C/g%3E%3C/svg%3E" alt="视频封面《夜色里的一百种轮廓》城市夜景人像记录" width="640" height="360">
+            <div class="lc-vplay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>
+            <span class="lc-vtag">城市探索</span>
+            <span class="lc-vmeta-in">09:24</span>
+          </div>
+          <div class="lc-vbody">
+            <h3>夜色里的一百种轮廓</h3>
+            <p>穿过三条老街，用镜头收集路灯光下的人影与招牌反光，一次关于城市夜色的影像散步。</p>
+            <div class="lc-vauthor">
+              <span class="lc-avatar" style="background:#7d67c9">阿</span>
+              <span>阿雾</span>
+            </div>
+            <div class="lc-vstat">
+              <button type="button" class="lc-like" data-count="1286">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.7-9-9c-1.3-2.9.7-6 4-6 2 0 3.2 1.1 5 3 1.8-1.9 3-3 5-3 3.3 0 5.3 3.1 4 6-2 4.3-9 9-9 9z"/></svg>
+                <span>1286</span>
+              </button>
+              <button type="button" class="lc-fav" aria-label="收藏">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12a1 1 0 011 1v17l-7-4-7 4V4a1 1 0 011-1z"/></svg>
+              </button>
+              <span class="lc-spacer"></span>
+              <button type="button" class="lc-copy" data-title="夜色里的一百种轮廓">复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="lc-vcard">
+          <div class="lc-vcover">
+            <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='v2' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23f7dcec'/%3E%3Cstop offset='1' stop-color='%23b0a0e8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23v2)'/%3E%3Crect x='70' y='60' width='220' height='250' rx='12' fill='%232c2148' opacity='0.72'/%3E%3Ccircle cx='180' cy='150' r='46' fill='no</svg>" fill='%23e8a0c8'/%3E%3C/svg%3E" alt="视频封面《一件蕾丝衫的三种穿法》服饰细节与搭配记录" width="640" height="360" style="display:none">
+            <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='v2b' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23f7dcec'/%3E%3Cstop offset='1' stop-color='%23b0a0e8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23v2b)'/%3E%3Crect x='80' y='60' width='200' height='240' rx='14' fill='%233a2350' opacity='0.8'/%3E%3Ccircle cx='180' cy='150' r='46' fill='%23e8a0c8'/%3E%3Cpath d='M80 300h480' stroke='%233a2350' stroke-opacity='0.3' stroke-width='6'/%3E%3Crect x='340' y='90' width='220' height='180' rx='14' fill='%232c2148' opacity='0.55'/%3E%3C/svg%3E" alt="视频封面《一件蕾丝衫的三种穿法》服饰细节与搭配记录" width="640" height="360">
+            <div class="lc-vplay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>
+            <span class="lc-vtag">生活方式</span>
+            <span class="lc-vmeta-in">06:40</span>
+          </div>
+          <div class="lc-vbody">
+            <h3>一件蕾丝衫的三种穿法</h3>
+            <p>从通勤到周末，用同一件单品做出三种气质。附赠布光与配饰选择的小技巧。</p>
+            <div class="lc-vauthor">
+              <span class="lc-avatar" style="background:#c979b0">简</span>
+              <span>简一</span>
+            </div>
+            <div class="lc-vstat">
+              <button type="button" class="lc-like" data-count="942">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.7-9-9c-1.3-2.9.7-6 4-6 2 0 3.2 1.1 5 3 1.8-1.9 3-3 5-3 3.3 0 5.3 3.1 4 6-2 4.3-9 9-9 9z"/></svg>
+                <span>942</span>
+              </button>
+              <button type="button" class="lc-fav" aria-label="收藏">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12a1 1 0 011 1v17l-7-4-7 4V4a1 1 0 011-1z"/></svg>
+              </button>
+              <span class="lc-spacer"></span>
+              <button type="button" class="lc-copy" data-title="一件蕾丝衫的三种穿法">复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="lc-vcard">
+          <div class="lc-vcover">
+            <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='v3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232f6b58'/%3E%3Cstop offset='1' stop-color='%237fd6c4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23v3)'/%3E%3Ccircle cx='220' cy='150' r='72' fill='%23f7dcec' opacity='0.35'/%3E%3Cpath d='M0 300q160-80 320-14t320-28v102H0z' fill='%231b1230' opacity='0.5'/%3E%3Cpath d='M420 80l60 40-60 40z' fill='%23f7dcec' opacity='0.7'/%3E%3C/svg%3E" alt="视频封面《清晨六点的湿地》自然光户外影像记录" width="640" height="360">
+            <div class="lc-vplay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>
+            <span class="lc-vtag">户外活动</span>
+            <span class="lc-vmeta-in">07:18</span>
+          </div>
+          <div class="lc-vbody">
+            <h3>清晨六点的湿地</h3>
+            <p>零下的空气、结霜的芦苇与一群早起的人。关于呼吸节奏与镜头呼吸感的完整记录。</p>
+            <div class="lc-vauthor">
+              <span class="lc-avatar" style="background:#4bab98">林</span>
+              <span>林岸</span>
+            </div>
+            <div class="lc-vstat">
+              <button type="button" class="lc-like" data-count="763">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.7-9-9c-1.3-2.9.7-6 4-6 2 0 3.2 1.1 5 3 1.8-1.9 3-3 5-3 3.3 0 5.3 3.1 4 6-2 4.3-9 9-9 9z"/></svg>
+                <span>763</span>
+              </button>
+              <button type="button" class="lc-fav" aria-label="收藏">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12a1 1 0 011 1v17l-7-4-7 4V4a1 1 0 011-1z"/></svg>
+              </button>
+              <span class="lc-spacer"></span>
+              <button type="button" class="lc-copy" data-title="清晨六点的湿地">复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="lc-vcard">
+          <div class="lc-vcover">
+            <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='v4' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23c979b0'/%3E%3Cstop offset='1' stop-color='%23f0d7b8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23v4)'/%3E%3Crect x='120' y='50' width='400' height='260' rx='16' fill='%23ffffff' opacity='0.35'/%3E%3Ccircle cx='320' cy='170' r='64' fill='none' stroke='%232c2148' stroke-width='4' opacity='0.65'/%3E%3Cpath d='M250 215q70 60 140 0' stroke='%232c2148' stroke-width='5' fill='none' opacity='0.6' stroke-linecap='round'/%3E%3C/svg%3E" alt="视频封面《人像调色的第二层》后期教程画面" width="640" height="360">
+            <div class="lc-vplay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>
+            <span class="lc-vtag">教程干货</span>
+            <span class="lc-vmeta-in">14:05</span>
+          </div>
+          <div class="lc-vbody">
+            <h3>人像调色的第二层</h3>
+            <p>肤色之外，环境色的统一才是关键。用四组案例拆解从基础曲线到分离色调的完整思路。</p>
+            <div class="lc-vauthor">
+              <span class="lc-avatar" style="background:#d18a4a">周</span>
+              <span>周野</span>
+            </div>
+            <div class="lc-vstat">
+              <button type="button" class="lc-like" data-count="1544">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.7-9-9c-1.3-2.9.7-6 4-6 2 0 3.2 1.1 5 3 1.8-1.9 3-3 5-3 3.3 0 5.3 3.1 4 6-2 4.3-9 9-9 9z"/></svg>
+                <span>1544</span>
+              </button>
+              <button type="button" class="lc-fav" aria-label="收藏">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12a1 1 0 011 1v17l-7-4-7 4V4a1 1 0 011-1z"/></svg>
+              </button>
+              <span class="lc-spacer"></span>
+              <button type="button" class="lc-copy" data-title="人像调色的第二层">复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="lc-vcard">
+          <div class="lc-vcover">
+            <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='v5' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231b1230'/%3E%3Cstop offset='1' stop-color='%236b2f6e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23v5)'/%3E%3Ccircle cx='320' cy='170' r='94' fill='none' stroke='%237fd6c4' stroke-width='3' opacity='0.7'/%3E%3Ccircle cx='320' cy='170' r='62' fill='%23e8a0c8' opacity='0.3'/%3E%3Cpath d='M140 300h360' stroke='%23f7dcec' stroke-opacity='0.4' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E" alt="视频封面《她说：镜头是可以信任的吗》人物访谈画面" width="640" height="360">
+            <div class="lc-vplay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>
+            <span class="lc-vtag">人物访谈</span>
+            <span class="lc-vmeta-in">18:30</span>
+          </div>
+          <div class="lc-vbody">
+            <h3>她说：镜头是可以信任的吗</h3>
+            <p>与三位长期出镜的创作者聊了聊「被看见」这件事，关于边界、信任与自我表达。</p>
+            <div class="lc-vauthor">
+              <span class="lc-avatar" style="background:#7d67c9">编</span>
+              <span>编辑部</span>
+            </div>
+            <div class="lc-vstat">
+              <button type="button" class="lc-like" data-count="2087">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.7-9-9c-1.3-2.9.7-6 4-6 2 0 3.2 1.1 5 3 1.8-1.9 3-3 5-3 3.3 0 5.3 3.1 4 6-2 4.3-9 9-9 9z"/></svg>
+                <span>2087</span>
+              </button>
+              <button type="button" class="lc-fav" aria-label="收藏">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12a1 1 0 011 1v17l-7-4-7 4V4a1 1 0 011-1z"/></svg>
+              </button>
+              <span class="lc-spacer"></span>
+              <button type="button" class="lc-copy" data-title="她说：镜头是可以信任的吗">复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="lc-vcard">
+          <div class="lc-vcover">
+            <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='v6' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23e8a0c8'/%3E%3Cstop offset='1' stop-color='%23977ad6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23v6)'/%3E%3Cpath d='M0 240q160-60 320-6t320-18v144H0z' fill='%231b1230' opacity='0.45'/%3E%3Ccircle cx='180' cy='120' r='50' fill='%23fff' opacity='0.5'/%3E%3Ccircle cx='470' cy='150' r='70' fill='%23fff' opacity='0.3'/%3E%3C/svg%3E" alt="视频封面《把家拍成片场》家居布景与自然光练习" width="640" height="360">
+            <div class="lc-vplay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>
+            <span class="lc-vtag">家居布景</span>
+            <span class="lc-vmeta-in">11:12</span>
+          </div>
+          <div class="lc-vbody">
+            <h3>把家拍成片场</h3>
+            <p>不租影棚也能拍出大片感：三盏小灯、两块亚麻布与一扇朝南的窗，完整布置流程演示。</p>
+            <div class="lc-vauthor">
+              <span class="lc-avatar" style="background:#977ad6">苏</span>
+              <span>苏叶</span>
+            </div>
+            <div class="lc-vstat">
+              <button type="button" class="lc-like" data-count="689">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.7-9-9c-1.3-2.9.7-6 4-6 2 0 3.2 1.1 5 3 1.8-1.9 3-3 5-3 3.3 0 5.3 3.1 4 6-2 4.3-9 9-9 9z"/></svg>
+                <span>689</span>
+              </button>
+              <button type="button" class="lc-fav" aria-label="收藏">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12a1 1 0 011 1v17l-7-4-7 4V4a1 1 0 011-1z"/></svg>
+              </button>
+              <span class="lc-spacer"></span>
+              <button type="button" class="lc-copy" data-title="把家拍成片场">复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="lc-vcard">
+          <div class="lc-vcover">
+            <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='v7' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%232c6b5e'/%3E%3Cstop offset='1' stop-color='%231b1230'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23v7)'/%3E%3Crect x='90' y='80' width='140' height='140' rx='10' fill='%237fd6c4' opacity='0.55'/%3E%3Crect x='250' y='110' width='140' height='140' rx='10' fill='%23f7dcec' opacity='0.35'/%3E%3Crect x='410' y='70' width='140' height='140' rx='10' fill='%23e8a0c8' opacity='0.5'/%3E%3C/svg%3E" alt="视频封面《三分钟教你做手工蕾丝灯罩》手作DIY记录" width="640" height="360">
+            <div class="lc-vplay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>
+            <span class="lc-vtag">手作 DIY</span>
+            <span class="lc-vmeta-in">03:48</span>
+          </div>
+          <div class="lc-vbody">
+            <h3>三分钟教你做手工蕾丝灯罩</h3>
+            <p>材料清单、裁剪尺寸与固定方式全部公开，附常见失败案例与补救方法。</p>
+            <div class="lc-vauthor">
+              <span class="lc-avatar" style="background:#4bab98">桃</span>
+              <span>桃子工坊</span>
+            </div>
+            <div class="lc-vstat">
+              <button type="button" class="lc-like" data-count="1120">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.7-9-9c-1.3-2.9.7-6 4-6 2 0 3.2 1.1 5 3 1.8-1.9 3-3 5-3 3.3 0 5.3 3.1 4 6-2 4.3-9 9-9 9z"/></svg>
+                <span>1120</span>
+              </button>
+              <button type="button" class="lc-fav" aria-label="收藏">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12a1 1 0 011 1v17l-7-4-7 4V4a1 1 0 011-1z"/></svg>
+              </button>
+              <span class="lc-spacer"></span>
+              <button type="button" class="lc-copy" data-title="三分钟教你做手工蕾丝灯罩">复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="lc-vcard">
+          <div class="lc-vcover">
+            <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='v8' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23b0a0e8'/%3E%3Cstop offset='1' stop-color='%234b2a63'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23v8)'/%3E%3Cpath d='M100 260l80-120 70 90 60-70 120 160z' fill='%23f7dcec' opacity='0.35'/%3E%3Ccircle cx='470' cy='100' r='46' fill='%237fd6c4' opacity='0.65'/%3E%3C/svg%3E" alt="视频封面《胶片真的回不去了吗》复古影像实践记录" width="640" height="360">
+            <div class="lc-vplay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>
+            <span class="lc-vtag">复古胶片</span>
+            <span class="lc-vmeta-in">10:02</span>
+          </div>
+          <div class="lc-vbody">
+            <h3>胶片真的回不去了吗</h3>
+            <p>用同一组人像分别拍摄数码与胶片，逐帧对比色彩、宽容度与情绪差异，给出实用取舍建议。</p>
+            <div class="lc-vauthor">
+              <span class="lc-avatar" style="background:#7d67c9">黎</span>
+              <span>黎晓</span>
+            </div>
+            <div class="lc-vstat">
+              <button type="button" class="lc-like" data-count="1352">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.7-9-9c-1.3-2.9.7-6 4-6 2 0 3.2 1.1 5 3 1.8-1.9 3-3 5-3 3.3 0 5.3 3.1 4 6-2 4.3-9 9-9 9z"/></svg>
+                <span>1352</span>
+              </button>
+              <button type="button" class="lc-fav" aria-label="收藏">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12a1 1 0 011 1v17l-7-4-7 4V4a1 1 0 011-1z"/></svg>
+              </button>
+              <span class="lc-spacer"></span>
+              <button type="button" class="lc-copy" data-title="胶片真的回不去了吗">复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="lc-vcard">
+          <div class="lc-vcover">
+            <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='v9' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23f0d7b8'/%3E%3Cstop offset='1' stop-color='%23c979b0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23v9)'/%3E%3Cpath d='M0 280q160-70 320-20t320-30v130H0z' fill='%232c2148' opacity='0.35'/%3E%3Ccircle cx='320' cy='150' r='70' fill='none' stroke='%232c2148' stroke-width='3' opacity='0.5'/%3E%3Cpath d='M260 200q60 48 120 0' stroke='%232c2148' stroke-width='4' fill='none' opacity='0.45' stroke-linecap='round'/%3E%3C/svg%3E" alt="视频封面《一次拍摄的完整复盘》创作幕后记录" width="640" height="360">
+            <div class="lc-vplay"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>
+            <span class="lc-vtag">创作幕后</span>
+            <span class="lc-vmeta-in">21:26</span>
+          </div>
+          <div class="lc-vbody">
+            <h3>一次拍摄的完整复盘</h3>
+            <p>从需求沟通、场地踩点到成片交付，一支商业人像短片的全部时间线与踩过的坑。</p>
+            <div class="lc-vauthor">
+              <span class="lc-avatar" style="background:#c979b0">司</span>
+              <span>司南影像</span>
+            </div>
+            <div class="lc-vstat">
+              <button type="button" class="lc-like" data-count="836">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.7-9-9c-1.3-2.9.7-6 4-6 2 0 3.2 1.1 5 3 1.8-1.9 3-3 5-3 3.3 0 5.3 3.1 4 6-2 4.3-9 9-9 9z"/></svg>
+                <span>836</span>
+              </button>
+              <button type="button" class="lc-fav" aria-label="收藏">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12a1 1 0 011 1v17l-7-4-7 4V4a1 1 0 011-1z"/></svg>
+              </button>
+              <span class="lc-spacer"></span>
+              <button type="button" class="lc-copy" data-title="一次拍摄的完整复盘">复制链接</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="lc-sec lc-sec-alt" id="lc-topics" aria-labelledby="lcTopicsTitle">
+    <div class="lc-wrap">
+      <div class="lc-sec-head">
+        <span class="lc-eyebrow">Series · 专题企划</span>
+        <h2 id="lcTopicsTitle">正在进行中的四个专题企划</h2>
+        <p>每个专题由官方给出主题与视觉基调，创作者自由投稿。投稿作品经初审后进入专题页，并参与季度口碑评选。</p>
+      </div>
+      <div class="lc-topic-grid">
+        <article class="lc-topic">
+          <div class="lc-topic-cover">
+            <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 320'%3E%3Cdefs%3E%3ClinearGradient id='t1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f7dcec'/%3E%3Cstop offset='1' stop-color='%23e8a0c8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='320' fill='url(%23t1)'/%3E%3Ccircle cx='320' cy='160' r='92' fill='none' stroke='%234b2a63' stroke-width='3' opacity='0.55'/%3E%3Ccircle cx='320' cy='160' r='58' fill='%232c2148' opacity='0.72'/%3E%3Cpath d='M282 30l-40-46 66 20zM358 30l40-46-66 20z' fill='%234b2a63'/%3E%3C/svg%3E" alt="专题《柔光与轮廓》封面：粉紫柔光中的人物轮廓" width="640" height="320">
+            <span class="lc-topic-state is-live">征集中</span>
+          </div>
+          <div class="lc-topic-body">
+            <h3>第 4 期 · 柔光与轮廓</h3>
+            <p>用扩散光与逆光塑造人物边缘，弱化锐利线条，强调呼吸感。适合室内棚拍与清晨窗光两类场景。</p>
+            <div class="lc-topic-foot"><span>已收稿 128 支</span>查看专题 →</div>
+          </div>
+        </article>
+        <article class="lc-topic">
+          <div class="lc-topic-cover">
+            <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 320'%3E%3Cdefs%3E%3ClinearGradient id='t2' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%232c6b5e'/%3E%3Cstop offset='1' stop-color='%237fd6c4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='320' fill='url(%23t2)'/%3E%3Cpath d='M0 250q160-80 320-20t320-30v120H0z' fill='%231b1230' opacity='0.45'/%3E%3Crect x='120' y='60' width='120' height='120' rx='12' fill='%23f7dcec' opacity='0.4'/%3E%3Crect x='400' y='80' width='120' height='120' rx='12' fill='%23f7dcec' opacity='0.25'/%3E%3C/svg%3E" alt="专题《城市褶皱》封面：青绿色调下的城市街区几何" width="640" height="320">
+            <span class="lc-topic-state is-live">征集中</span>
+          </div>
+          <div class="lc-topic-body">
+            <h3>第 5 期 · 城市褶皱</h3>
+            <p>走进老巷、菜市场与凌晨便利店，记录被折叠在城市缝隙里的生活质感与人际默契。</p>
+            <div class="lc-topic-foot"><span>已收稿 96 支</span>查看专题 →</div>
+          </div>
+        </article>
+        <article class="lc-topic">
+          <div class="lc-topic-cover">
+            <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 320'%3E%3Cdefs%3E%3ClinearGradient id='t3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f0d7b8'/%3E%3Cstop offset='1' stop-color='%23977ad6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='320' fill='url(%23t3)'/%3E%3Ccircle cx='320' cy='150' r='80' fill='%23ffffff' opacity='0.4'/%3E%3Cpath d='M200 200h240' stroke='%232c2148' stroke-width='4' opacity='0.5' stroke-linecap='round'/%3E%3Cpath d='M240 230h160' stroke='%232c2148' stroke-width='4' opacity='0.3' stroke-linecap='round'/%3E%3C/svg%3E" alt="专题《手艺人的房间》封面：暖色调手作空间" width="640" height="320">
+            <span class="lc-topic-state">已完结</span>
+          </div>
+          <div class="lc-topic-body">
+            <h3>第 3 期 · 手艺人的房间</h3>
+            <p>走进八位手作者的工作室，看他们如何用布、线、木头与光，搭出一个能安心做事的空间。</p>
+            <div class="lc-topic-foot"><span>已收稿 74 支</span>查看专题 →</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵 -->
+  <section class="lc-sec" id="lc-creators" aria-labelledby="lcCreatorsTitle">
+    <div class="lc-wrap">
+      <div class="lc-sec-head">
+        <span class="lc-eyebrow">Creators · 创作者矩阵</span>
+        <h2 id="lcCreatorsTitle">把作品交给人，让人被记住</h2>
+        <p>以下四位是本月重点推荐的平台创作者。点击「查看档案」可了解他们的擅长方向与合作方式。</p>
+      </div>
+      <div class="lc-creator-grid">
+        <article class="lc-creator">
+          <span class="lc-avatar" style="background:#7d67c9">阿</span>
+          <h3>阿雾</h3>
+          <div class="lc-crole">城市影像 / 夜拍</div>
+          <p>十年街拍经验，擅长在极弱光环境下捕捉人物情绪，作品常出现于城市影像专题。</p>
+          <div class="lc-ccounts"><div><b>128</b>作品</div><div><b>3.6万</b>粉丝</div></div>
+          <button class="lc-creator-btn" type="button" data-creator="阿雾|城市影像、夜拍、街头人像|十年街拍经验，擅长极弱光环境下的人物捕捉。|128 支作品 · 3.6 万粉丝">查看档案</button>
+        </article>
+        <article class="lc-creator">
+          <span class="lc-avatar" style="background:#c979b0">简</span>
+          <h3>简一</h3>
+          <div class="lc-crole">生活方式 / 穿搭</div>
+          <p>服装设计师出身，专注把日常穿搭拆成可执行的搭配逻辑，视频节奏轻快、信息密度高。</p>
+          <div class="lc-ccounts"><div><b>86</b>作品</div><div><b>2.1万</b>粉丝</div></div>
+          <button class="lc-creator-btn" type="button" data-creator="简一|生活方式、穿搭、单品测评|服装设计师出身，把复杂搭配拆解为可执行逻辑。|86 支作品 · 2.1 万粉丝">查看档案</button>
+        </article>
+        <article class="lc-creator">
+          <span class="lc-avatar" style="background:#4bab98">林</span>
+          <h3>林岸</h3>
+          <div class="lc-crole">户外记录 / 自然光</div>
+          <p>常年在湿地与山地间拍摄，坚持自然光优先，擅长用环境声与呼吸感构建叙事。</p>
+          <div class="lc-ccounts"><div><b>64</b>作品</div><div><b>1.8万</b>粉丝</div></div>
+          <button class="lc-creator-btn" type="button" data-creator="林岸|户外记录、自然光、环境叙事|常年拍摄湿地与山地，坚持自然光优先的影像方式。|64 支作品 · 1.8 万粉丝">查看档案</button>
+        </article>
+        <article class="lc-creator">
+          <span class="lc-avatar" style="background:#d18a4a">周</span>
+          <h3>周野</h3>
+          <div class="lc-crole">后期调色 / 教程</div>
+          <p>影像后期讲师，课程以案例拆解见长，强调「先统一环境色，再处理肤色」的方法论。</p>
+          <div class="lc-ccounts"><div><b>152</b>作品</div><div><b>4.2万</b>粉丝</div></div>
+          <button class="lc-creator-btn" type="button" data-creator="周野|后期调色、教程、案例拆解|影像后期讲师，主张先统一环境色再处理肤色。|152 支作品 · 4.2 万粉丝">查看档案</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 作品墙 -->
+  <section class="lc-sec lc-sec-alt" id="lc-wall" aria-labelledby="lcWallTitle">
+    <div class="lc-wrap">
+      <div class="lc-sec-head">
+        <span class="lc-eyebrow">Gallery · 作品墙</span>
+        <h2 id="lcWallTitle">这个月，社区里被收藏最多的画面</h2>
+        <p>尺寸不一的封面来自不同创作者与不同题材，拼在一起像一面会呼吸的墙。</p>
+      </div>
+      <div class="lc-wall">
+        <a class="lc-wall-item w-a" href="#lc-videos"><img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 400'%3E%3Cdefs%3E%3ClinearGradient id='w1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234b2a63'/%3E%3Cstop offset='1' stop-color='%23e8a0c8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='500' height='400' fill='url(%23w1)'/%3E%3Ccircle cx='250' cy='180' r='88' fill='%231b1230' opacity='0.55'/%3E%3Cpath d='M210 60l-34-40 56 18zM290 60l34-40-56 18z' fill='%23f7dcec'/%3E%3Ccircle cx='222' cy='168' r='6' fill='%237fd6c4'/%3E%3Ccircle cx='278' cy='168' r='6' fill='%237fd6c4'/%3E%3C/svg%3E" alt="作品墙封面：紫粉渐变中的人像轮廓与猫耳造型"><span>夜窗 · 阿雾</span></a>
+        <a class="lc-wall-item w-b" href="#lc-videos"><img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 440 400'%3E%3Cdefs%3E%3ClinearGradient id='w2' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%237fd6c4'/%3E%3Cstop offset='1' stop-color='%232c6b5e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='440' height='400' fill='url(%23w2)'/%3E%3Cpath d='M0 300q110-60 220-16t220-24v140H0z' fill='%231b1230' opacity='0.45'/%3E%3Ccircle cx='300' cy='120' r='58' fill='%23f7dcec' opacity='0.45'/%3E%3C/svg%3E" alt="作品墙封面：青绿户外场景中的逆光人物剪影"><span>湿地晨光 · 林岸</span></a>
+        <a class="lc-wall-item w-c" href="#lc-videos"><img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23f0d7b8'/%3E%3Ccircle cx='160' cy='100' r='52' fill='%23c979b0' opacity='0.6'/%3E%3Cpath d='M120 140q40 30 80 0' stroke='%232c2148' stroke-width='4' fill='none' opacity='0.5' stroke-linecap='round'/%3E%3C/svg%3E" alt="作品墙封面：暖米色背景中的粉调人像练习"><span>柔光练习 · 苏叶</span></a>
+        <a class="lc-wall-item w-d" href="#lc-videos"><img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%232c2148'/%3E%3Crect x='80' y='40' width='160' height='120' rx='10' fill='none' stroke='%23f7dcec' stroke-width='2' opacity='0.6'/%3E%3Ccircle cx='160' cy='100' r='28' fill='%237fd6c4' opacity='0.7'/%3E%3C/svg%3E" alt="作品墙封面：深紫色背景中的荧光几何构图"><span>几何夜 · 司南</span></a>
+        <a class="lc-wall-item w-e" href="#lc-videos"><img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 200'%3E%3Crect width='240' height='200' fill='%23977ad6'/%3E%3Cpath d='M40 160l50-90 40 60 30-40 40 70z' fill='%23f7dcec' opacity='0.55'/%3E%3C/svg%3E" alt="作品墙封面：紫调山形色块与层次构成"><span>远山 · 黎晓</span></a>
+        <a class="lc-wall-item w-f" href="#lc-videos"><img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 200'%3E%3Crect width='240' height='200' fill='%23f7dcec'/%3E%3Crect x='60' y='50' width='60' height='100' rx='8' fill='%23c979b0' opacity='0.7'/%3E%3Crect x='132' y='70' width='50' height='80' rx='8' fill='%234b2a63' opacity='0.6'/%3E%3C/svg%3E" alt="作品墙封面：粉白背景上的两块色阶拼接"><span>并列 · 简一</span></a>
+        <a class="lc-wall-item w-g" href="#lc-videos"><img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 200'%3E%3Crect width='240' height='200' fill='%232c6b5e'/%3E%3Ccircle cx='120' cy='100' r='56' fill='none' stroke='%237fd6c4' stroke-width='3'/%3E%3Ccircle cx='120' cy='100' r='24' fill='%23f7dcec' opacity='0.6'/%3E%3C/svg%3E" alt="作品墙封面：深青底色上的同心圆构图"><span>同心 · 周野</span></a>
+        <a class="lc-wall-item w-h" href="#lc-videos"><img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 200'%3E%3Crect width='240' height='200' fill='%23d18a4a'/%3E%3Cpath d='M0 150q60-50 120-10t120-30v90H0z' fill='%231b1230' opacity='0.45'/%3E%3C/svg%3E" alt="作品墙封面：琥珀色背景中的柔和曲线"><span>余温 · 桃子工坊</span></a>
+        <a class="lc-wall-item w-i" href="#lc-videos"><img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 400'%3E%3Cdefs%3E%3ClinearGradient id='w9' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231b1230'/%3E%3Cstop offset='1' stop-color='%237d67c9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='500' height='400' fill='url(%23w9)'/%3E%3Ccircle cx='250' cy='200' r='96' fill='none' stroke='%23e8a0c8' stroke-width='2' opacity='0.6'/%3E%3Ccircle cx='250' cy='200' r='56' fill='%23e8a0c8' opacity='0.2'/%3E%3Cpath d='M250 120v160M170 200h160' stroke='%237fd6c4' stroke-width='2' opacity='0.5'/%3E%3C/svg%3E" alt="作品墙封面：深紫背景中的镜头环形光圈图形"><span>取景器 · 编辑部</span></a>
+        <a class="lc-wall-item w-j" href="#lc-videos"><img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect width='400' height='200' fill='%23e8a0c8'/%3E%3Cpath d='M0 170q100-60 200-16t200-20v66H0z' fill='%234b2a63' opacity='0.5'/%3E%3C/svg%3E" alt="作品墙封面：粉色背景中的波浪层次"><span>潮汐 · 苏叶</span></a>
+        <a class="lc-wall-item w-k" href="#lc-videos"><img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect width='400' height='200' fill='%23f7dcec'/%3E%3Crect x='90' y='50' width='220' height='100' rx='12' fill='%232c6b5e' opacity='0.6'/%3E%3Ccircle cx='200' cy='100' r='26' fill='%23f7dcec'/%3E%3C/svg%3E" alt="作品墙封面：粉白背景中的深绿矩形与圆点"><span>窗口 · 简一</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评价 + 动态榜单 -->
+  <section class="lc-sec" id="lc-voices" aria-labelledby="lcVoicesTitle">
+    <div class="lc-wrap">
+      <div class="lc-sec-head">
+        <span class="lc-eyebrow">Community · 社区口碑</span>
+        <h2 id="lcVoicesTitle">他们为什么留在蕾丝猫 秀人网</h2>
+        <p>评价来自真实注册用户，内容经本人授权展示。长度、角度各不相同，我们保留原话。</p>
+      </div>
+      <div class="lc-review-grid">
+        <article class="lc-review">
+          <div class="lc-review-top">
+            <span class="lc-avatar" style="background:#7d67c9">摄</span>
+            <div><b>摄影师老K</b><small>入驻 3 年 · 人像摄影</small></div>
+          </div>
+          <div class="lc-stars">★★★★★</div>
+          <p>最打动我的是审核标准。以前在别的地方投稿，标题党比作品质量重要，这里恰恰相反，画质和叙事不过关就是不给推荐位，久了反而踏实。</p>
+          <div class="lc-review-tags"><i>审核严格</i><i>专业</i></div>
+        </article>
+        <article class="lc-review">
+          <div class="lc-review-top">
+            <span class="lc-avatar" style="background:#c979b0">模</span>
+            <div><b>小林同学</b><small>入驻 1 年 · 出镜创作者</small></div>
+          </div>
+          <div class="lc-stars">★★★★★</div>
+          <p>作为出镜的人，我很在意平台对肖像权的态度。这里每条作品都要授权说明，还能随时申请下架，这点让我愿意长期合作。</p>
+          <div class="lc-review-tags"><i>版权友好</i><i>值得信赖</i></div>
+        </article>
+        <article class="lc-review">
+          <div class="lc-review-top">
+            <span class="lc-avatar" style="background:#4bab98">学</span>
+            <div><b>阿哲不熬夜</b><small>注册 8 个月 · 后期学习者</small></div>
+          </div>
+          <div class="lc-stars">★★★★☆</div>
+          <p>教程区是真的能学到东西。[人像调色的第二层]我反复看了四遍，跟着做了一遍，肤色终于不脏了。就是希望更新再快一点。</p>
+          <div class="lc-review-tags"><i>教程实用</i><i>更新期待</i></div>
+        </article>
+        <article class="lc-review">
+          <div class="lc-review-top">
+            <span class="lc-avatar" style="background:#d18a4a">品</span>
+            <div><b>品牌合作方 · 周女士</b><small>企业用户 · 内容采购</small></div>
+          </div>
+          <div class="lc-stars">★★★★★</div>
+          <p>我们做过两季联名企划，对接流程清晰，创作者匹配度高，交付时间可控。作为企业方，最看重的是这种确定性。</p>
+          <div class="lc-review-tags"><i>流程清晰</i><i>企业合作</i></div>
+        </article>
+        <article class="lc-review">
+          <div class="lc-review-top">
+            <span class="lc-avatar" style="background:#977ad6">路</span>
+            <div><b>路过看看</b><small>注册 2 年 · 普通用户</small></div>
+          </div>
+          <div class="lc-stars">★★★★☆</div>
+          <p>不追热点是优点也是缺点。优点是页面看着舒服，不会一打开全是同质化的东西；缺点是想刷短平快的内容时，这里节奏偏慢。</p>
+          <div class="lc-review-tags"><i>质感好</i><i>节奏偏慢</i></div>
+        </article>
+        <article class="lc-review">
+          <div class="lc-review-top">
+            <span class="lc-avatar" style="background:#c979b0">新</span>
+            <div><b>新人小鹿</b><small>入驻 3 个月 · 手作方向</small></div>
+          </div>
+          <div class="lc-stars">★★★★★</div>
+          <p>新人扶持是真的有。第一支作品只有几百播放，编辑主动私信给了选题建议，第二支就上了专题。这种被认真对待的感觉很少见。</p>
+          <div class="lc-review-tags"><i>新人友好</i><i>陪伴成长</i></div>
+        </article>
+      </div>
+
+      <div style="height:54px"></div>
+
+      <div class="lc-split">
+        <div>
+          <div class="lc-sec-head" style="margin-bottom:22px">
+            <span class="lc-eyebrow">Updates · 企业动态</span>
+            <h2 style="font-size:26px">官方发布与内容更新</h2>
+          </div>
+          <div class="lc-news" id="lc-news">
+            <div class="lc-news-item">
+              <div class="lc-news-date">18<small>11月</small></div>
+              <div>
+                <h3><span class="lc-nd-tag">官方发布</span> 「城市光影计划」首批 12 支原创影像上线</h3>
+                <p>由平台联合六位创作者共同完成，覆盖老城区、码头与夜间商业街三类场景，专题页已同步开放。</p>
+              </div>
+            </div>
+            <div class="lc-news-item">
+              <div class="lc-news-date">15<small>11月</small></div>
+              <div>
+                <h3><span class="lc-nd-tag">比赛报名</span> 年度口碑榜投票通道开启，共设六类奖项</h3>
+                <p>投票截止 12 月 20 日，每位用户每日可投三票，结果将在官方网站与社区同步公布。</p>
+              </div>
+            </div>
+            <div class="lc-news-item">
+              <div class="lc-news-date">09<small>11月</small></div>
+              <div>
+                <h3><span class="lc-nd-tag">功能更新</span> 创作工具箱新增「标题建议」与「封面构图参考」</h3>
+                <p>基于站内高口碑作品的共性特征给出建议，仅作为参考，不替代创作者判断。</p>
+              </div>
+            </div>
+            <div class="lc-news-item">
+              <div class="lc-news-date">02<small>11月</small></div>
+              <div>
+                <h3><span class="lc-nd-tag">品牌故事</span> 平台与两家影像机构达成版权保护合作</h3>
+                <p>为入驻创作者提供版权登记协助与侵权应对支持，首批试点覆盖人像与纪实两个方向。</p>
+              </div>
+            </div>
+            <div class="lc-news-item">
+              <div class="lc-news-date">26<small>10月</small></div>
+              <div>
+                <h3><span class="lc-nd-tag">线下活动</span> 首场创作者见面会于上月在城中艺术空间举办</h3>
+                <p>共有 68 位创作者到场，现场完成三轮主题共创，相关影像已在作品墙集中展示。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="lc-sec-head" style="margin-bottom:22px">
+            <span class="lc-eyebrow">Rank · 数据榜单</span>
+            <h2 style="font-size:26px">本周热度榜</h2>
+          </div>
+          <div class="lc-rank">
+            <div class="lc-rank-item"><span class="lc-rank-no">1</span><div class="lc-rank-txt"><b>夜色里的一百种轮廓</b><small>阿雾 · 城市探索</small></div><span class="lc-rank-hot">9862</span></div>
+            <div class="lc-rank-item"><span class="lc-rank-no">2</span><div class="lc-rank-txt"><b>她说：镜头是可以信任的吗</b><small>编辑部 · 人物访谈</small></div><span class="lc-rank-hot">8930</span></div>
+            <div class="lc-rank-item"><span class="lc-rank-no">3</span><div class="lc-rank-txt"><b>人像调色的第二层</b><small>周野 · 教程干货</small></div><span class="lc-rank-hot">7715</span></div>
+            <div class="lc-rank-item"><span class="lc-rank-no">4</span><div class="lc-rank-txt"><b>胶片真的回不去了吗</b><small>黎晓 · 复古胶片</small></div><span class="lc-rank-hot">6402</span></div>
+            <div class="lc-rank-item"><span class="lc-rank-no">5</span><div class="lc-rank-txt"><b>一件蕾丝衫的三种穿法</b><small>简一 · 生活方式</small></div><span class="lc-rank-hot">5788</span></div>
+            <div class="lc-rank-item"><span class="lc-rank-no">6</span><div class="lc-rank-txt"><b>三分钟教你做手工蕾丝灯罩</b><small>桃子工坊 · 手作</small></div><span class="lc-rank-hot">5231</span></div>
+            <div class="lc-rank-item"><span class="lc-rank-no">7</span><div class="lc-rank-txt"><b>清晨六点的湿地</b><small>林岸 · 户外活动</small></div><span class="lc-rank-hot">4870</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作灵感 -->
+  <section class="lc-sec lc-sec-alt" id="lc-ideas" aria-labelledby="lcIdeasTitle">
+    <div class="lc-wrap">
+      <div class="lc-sec-head">
+        <span class="lc-eyebrow">Inspiration · 创作灵感</span>
+        <h2 id="lcIdeasTitle">三个可以直接拿去用的选题方向</h2>
+        <p>来自编辑部的选题会记录，每周整理一次。不必照搬，但可以少走一点弯路。</p>
+      </div>
+      <div class="lc-ideas">
+        <div class="lc-idea">
+          <div class="lc-idea-num">01</div>
+          <h3>「同一扇窗的十二种光」</h3>
+          <p>固定机位与固定人物，只改变时间与天气，做一组跨季节的观察影像。适合单人完成，也适合长期更新。</p>
+          <span class="lc-tagline">自然光 · 长期企划</span>
+        </div>
+        <div class="lc-idea">
+          <div class="lc-idea-num">02</div>
+          <h3>「她的工具箱」</h3>
+          <p>记录不同职业女性随身携带的物品，从包里翻出一段生活史。访谈加特写，节奏控制在三分钟内。</p>
+          <span class="lc-tagline">人物访谈 · 细节叙事</span>
+        </div>
+        <div class="lc-idea">
+          <div class="lc-idea-num">03</div>
+          <h3>「重拍一次旧照片」</h3>
+          <p>找一张十年前的旧照，回到原地点重拍。画面之外的变化，往往比画面本身更有力量。</p>
+          <span class="lc-tagline">城市探索 · 情感故事</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 合作品牌 + FAQ -->
+  <section class="lc-sec" id="lc-faq" aria-labelledby="lcFaqTitle">
+    <div class="lc-wrap">
+      <div class="lc-sec-head">
+        <span class="lc-eyebrow">Partners & FAQ</span>
+        <h2 id="lcFaqTitle">合作伙伴与常见问题</h2>
+        <p>我们与影像机构、生活方式品牌与线下空间保持长期合作，也把用户最常问的问题整理在这里。</p>
+      </div>
+      <div class="lc-partners">
+        <div class="lc-partner">光屿影像<small>影像机构</small></div>
+        <div class="lc-partner">南窗生活<small>生活方式品牌</small></div>
+        <div class="lc-partner">拾光器材<small>摄影器材</small></div>
+        <div class="lc-partner">纸上艺术空间<small>线下空间</small></div>
+        <div class="lc-partner">青禾出版<small>内容出版</small></div>
+      </div>
+
+      <div style="height:44px"></div>
+
+      <div class="lc-faq">
+        <details open>
+          <summary>如何向蕾丝猫 秀人网投稿作品？</summary>
+          <div class="lc-faq-body">点击页面底部「投稿入口」按钮，填写作品标题、简介与授权说明后上传。建议同时附上拍摄参数与创作手记，编辑部会据此判断是否进入推荐位。</div>
+        </details>
+        <details>
+          <summary>作品审核一般需要多久？</summary>
+          <div class="lc-faq-body">常规审核周期为 3–5 个工作日。专题征稿期间投稿量较大，可能延长至 7 个工作日。审核结果会通过站内信通知，未通过时会附上具体原因。</div>
+        </details>
+        <details>
+          <summary>平台如何保障创作者的版权？</summary>
+          <div class="lc-faq-body">所有上架作品需提供授权说明，平台为创作者提供版权登记协助与侵权投诉通道。发现未授权搬运时，可提交链接与证明材料，我们会在核实后下架处理。</div>
+        </details>
+        <details>
+          <summary>成为签约创作者有什么条件？</summary>
+          <div class="lc-faq-body">需要在平台稳定发布作品满三个月，且有至少三支进入过推荐位。签约后享专题优先投稿、工具能力开放与商业合作对接等权益。</div>
+        </details>
+        <details>
+          <summary>企业或品牌方可以如何合作？</summary>
+          <div class="lc-faq-body">可通过「联系投稿」中的企业合作邮箱提交需求，说明合作形式、预算区间与交付时间。我们会在两个工作日内给出初步方案与创作者匹配建议。</div>
+        </details>
+        <details>
+          <summary>年度口碑榜的评选规则是什么？</summary>
+          <div class="lc-faq-body">由用户投票（占 60%）与编辑部评审（占 40%）共同决定，共设六类奖项。投票期间每个账号每日可投三票，严禁刷票，一经发现取消参评资格。</div>
+        </details>
+        <details>
+          <summary>是否支持线下活动与影像展合作？</summary>
+          <div class="lc-faq-body">支持。我们每季度会策划一次线下影像展或创作者见面会，欢迎空间方与品牌方共同参与，具体可联系品牌合作邮箱。</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系 / 投稿 -->
+  <section class="lc-sec" id="lc-join" aria-labelledby="lcJoinTitle">
+    <div class="lc-wrap">
+      <div class="lc-contact">
+        <div>
+          <span class="lc-eyebrow" style="color:#e8a0c8">Contact · 联系我们</span>
+          <h2 id="lcJoinTitle">把你的作品，放到这面墙上</h2>
+          <p>无论你是拍了十年的人像摄影师，还是刚刚拿起相机的记录者，蕾丝猫 秀人网都愿意为一个认真完成的画面留位置。</p>
+          <div class="lc-contact-list">
+            <div><b>投稿邮箱</b><span>create@lacecat-studio.cn</span></div>
+            <div><b>企业合作</b><span>partner@lacecat-studio.cn</span></div>
+            <div><b>内容举报</b><span>report@lacecat-studio.cn（24 小时内响应）</span></div>
+            <div><b>办公地址</b><span>城市影像产业园 B 座 3 层 306 室</span></div>
+          </div>
+        </div>
+        <div class="lc-contact-actions">
+          <button class="lc-btn lc-btn-light" type="button" id="lcOpenSubmit">投稿入口</button>
+          <button class="lc-btn lc-btn-ghost" type="button" id="lcOpenReport">举报与反馈</button>
+          <button class="lc-btn lc-btn-ghost" type="button" id="lcShareJoin">分享给朋友</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="lc-footer">
+  <div class="lc-wrap">
+    <div class="lc-footer-grid">
+      <div>
+        <div class="lc-footer-brand">
+          <svg class="lc-brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#2c2148"/>
+            <circle cx="32" cy="28" r="13" fill="none" stroke="#e8a0c8" stroke-width="3"/>
+            <path d="M22 22l-7-8 12 4zM42 22l7-8-12 4z" fill="#e8a0c8"/>
+            <circle cx="27" cy="27" r="2.2" fill="#e8a0c8"/>
+            <circle cx="37" cy="27" r="2.2" fill="#e8a0c8"/>
+            <path d="M24 46q8 10 16 0" stroke="#7fd6c4" stroke-width="3" fill="none" stroke-linecap="round"/>
+          </svg>
+          <b>蕾丝猫 · 秀人网</b>
+        </div>
+        <p>蕾丝猫 秀人网官方网站，是一个专注原创人像影像与生活美学的视频品牌门户。我们坚持以正版、高清、专业为标准，持续运营面向创作者的内容生态，让真实、温暖、有力量的画面被更多人看见。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <a href="#lc-focus">焦点影像</a>
+        <a href="#lc-videos">精品内容</a>
+        <a href="#lc-topics">专题企划</a>
+        <a href="#lc-wall">作品墙</a>
+      </div>
+      <div>
+        <h4>关于平台</h4>
+        <a href="#lc-about">品牌故事</a>
+        <a href="#lc-creators">创作者矩阵</a>
+        <a href="#lc-news">企业动态</a>
+        <a href="#lc-faq">常见问题</a>
+      </div>
+      <div>
+        <h4>参与方式</h4>
+        <a href="#lc-join">投稿入口</a>
+        <a href="#lc-join">企业合作</a>
+        <a href="#lc-join">举报反馈</a>
+        <a href="#lc-join">线下活动</a>
+      </div>
+    </div>
+    <div class="lc-footer-bottom">
+      <span>蕾丝猫 秀人网官方网站 · 版权所有 · 持续运营中</span>
+      <span>原创内容受版权保护 · 未经授权禁止转载</span>
+    </div>
+  </div>
+</footer>
+
+<button class="lc-top-btn" id="lcTopBtn" type="button" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5l7 7-1.4 1.4L13 8.8V19h-2V8.8L6.4 13.4 5 12z"/></svg>
+</button>
+
+<div class="lc-toast" id="lcToast" role="status" aria-live="polite"></div>
+
+<!-- 投稿弹窗 -->
+<div class="lc-modal" id="lcModalSubmit" aria-hidden="true">
+  <div class="lc-modal-card" role="dialog" aria-modal="true" aria-labelledby="lcSubmitTitle">
+    <h3 id="lcSubmitTitle">投稿到蕾丝猫 秀人网</h3>
+    <p class="lc-modal-sub">填写基本信息后，编辑部会在 3–5 个工作日内回复。请确保作品为本人原创并已获得肖像授权。</p>
+    <input type="text" id="lcSubmitName" placeholder="作品标题" aria-label="作品标题">
+    <textarea id="lcSubmitDesc" rows="3" placeholder="作品简介与创作手记（建议 100 字以内）" aria-label="作品简介"></textarea>
+    <div class="lc-modal-actions">
+      <button class="lc-btn lc-btn-plain" type="button" data-close="lcModalSubmit">取消</button>
+      <button class="lc-btn lc-btn-primary" type="button" id="lcSubmitSend">提交</button>
+    </div>
+  </div>
+</div>
+
+<!-- 举报弹窗 -->
+<div class="lc-modal" id="lcModalReport" aria-hidden="true">
+  <div class="lc-modal-card" role="dialog" aria-modal="true" aria-labelledby="lcReportTitle">
+    <h3 id="lcReportTitle">举报与反馈</h3>
+    <p class="lc-modal-sub">请描述你遇到的问题，我们会认真核查。涉及版权的内容请附上原始素材信息。</p>
+    <textarea id="lcReportText" rows="4" placeholder="请填写具体问题…" aria-label="问题描述"></textarea>
+    <div class="lc-modal-actions">
+      <button class="lc-btn lc-btn-plain" type="button" data-close="lcModalReport">取消</button>
+      <button class="lc-btn lc-btn-primary" type="button" id="lcReportSend">发送</button>
+    </div>
+  </div>
+</div>
+
+<!-- 创作者档案弹窗 -->
+<div class="lc-modal" id="lcModalCreator" aria-hidden="true">
+  <div class="lc-modal-card" role="dialog" aria-modal="true" aria-labelledby="lcCreatorTitle">
+    <h3 id="lcCreatorTitle">创作者档案</h3>
+    <p class="lc-modal-sub" id="lcCreatorSub"></p>
+    <div id="lcCreatorBody" style="font-size:13.5px;color:#4f4160;line-height:1.9"></div>
+    <div class="lc-modal-actions">
+      <button class="lc-btn lc-btn-primary" type="button" data-close="lcModalCreator">知道了</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 移动端导航 ---------- */
+  var burger = document.getElementById('lcBurger');
+  var nav = document.getElementById('lcNav');
+  if (burger && nav) {
+    burger.addEventListener('click', function(){
+      var open = nav.classList.toggle('is-open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        nav.classList.remove('is-open');
+        burger.classList.remove('is-open');
+        burger.setAttribute('aria-expanded','false');
+      });
+    });
+  }
+
+  /* ---------- 导航高亮 ---------- */
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.lc-nav a'));
+  var sections = navLinks.map(function(a){
+    var id = a.getAttribute('href');
+    return id && id.length > 1 ? document.querySelector(id) : null;
+  });
+  function updateActive(){
+    var pos = window.scrollY + 160;
+    var current = 0;
+    sections.forEach(function(sec, i){
+      if (sec && sec.offsetTop <= pos) current = i;
+    });
+    navLinks.forEach(function(a, i){
+      a.classList.toggle('is-active', i === current);
+    });
+  }
+
+  /* ---------- 搜索提示 ---------- */
+  var input = document.getElementById('lcSearchInput');
+  var tip = document.getElementById('lcSearchTip');
+  var searchBtn = document.getElementById('lcSearchBtn');
+  var searchData = [
+    '夜色里的一百种轮廓','一件蕾丝衫的三种穿法','清晨六点的湿地','人像调色的第二层',
+    '她说：镜头是可以信任的吗','把家拍成片场','三分钟教你做手工蕾丝灯罩','胶片真的回不去了吗',
+    '一次拍摄的完整复盘','阿雾','简一','林岸','周野','柔光与轮廓','城市褶皱','手艺人的房间'
+  ];
+  function doSearch(){
+    var q = (input.value || '').trim();
+    if (!q) {
+      tip.textContent = '试试输入「柔光」「阿雾」「调色」，或直接浏览焦点影像。';
+      return;
+    }
+    var hits = searchData.filter(function(s){ return s.indexOf(q) !== -1; });
+    if (hits.length) {
+      tip.textContent = '为你找到 ' + hits.length + ' 个相关结果：' + hits.slice(0, 4).join('、') + (hits.length > 4 ? ' 等' : '') + '。';
+    } else {
+      tip.textContent = '暂未匹配到「' + q + '」，可换个关键词，或到专题企划中按主题浏览。';
+    }
+  }
+  if (input) {
+    input.addEventListener('keydown', function(e){
+      if (e.key === 'Enter') { e.preventDefault(); doSearch(); }
+    });
+    input.addEventListener('input', function(){
+      if (!input.value) tip.textContent = '';
+    });
+  }
+  if (searchBtn) searchBtn.addEventListener('click', doSearch);
+
+  /* ---------- Toast ---------- */
+  var toast = document.getElementById('lcToast');
+  var toastTimer = null;
+  function showToast(msg){
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('is-show'); }, 2200);
+  }
+
+  /* ---------- 复制链接 ---------- */
+  function copyLink(title){
+    var text = '《' + title + '》— 蕾丝猫 秀人网';
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function(){
+        showToast('链接已复制，去分享给同好吧');
+      }).catch(function(){
+        showToast('复制失败，请手动复制页面链接');
+      });
+    } else {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); showToast('链接已复制，去分享给同好吧'); }
+      catch (err) { showToast('复制失败，请手动复制页面链接'); }
+      document.body.removeChild(ta);
+    }
+  }
+
+  document.querySelectorAll('.lc-copy').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      copyLink(btn.getAttribute('data-title') || '蕾丝猫 秀人网');
+    });
+  });
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  document.querySelectorAll('.lc-like').forEach(function(btn){
+    var span = btn.querySelector('span');
+    var base = parseInt(btn.getAttribute('data-count'), 10) || 0;
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('is-on');
+      span.textContent = on ? (base + 1) : base;
+      if (on) showToast('已点赞，感谢你的喜欢');
+    });
+  });
+  document.querySelectorAll('.lc-fav').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('is-on');
+      btn.setAttribute('aria-label', on ? '取消收藏' : '收藏');
+      showToast(on ? '已加入收藏夹' : '已取消收藏');
+    });
+  });
+
+  /* ---------- 弹窗通用 ---------- */
+  function openModal(id){
+    var m = document.getElementById(id);
+    if (!m) return;
+    m.classList.add('is-show');
+    m.setAttribute('aria-hidden','false');
+  }
+  function closeModal(id){
+    var m = document.getElementById(id);
+    if (!m) return;
+    m.classList.remove('is-show');
+    m.setAttribute('aria-hidden','true');
+  }
+  document.querySelectorAll('[data-close]').forEach(function(btn){
+    btn.addEventListener('click', function(){ closeModal(btn.getAttribute('data-close')); });
+  });
+  document.querySelectorAll('.lc-modal').forEach(function(m){
+    m.addEventListener('click', function(e){
+      if (e.target === m) closeModal(m.id);
+    });
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.lc-modal.is-show').forEach(function(m){ closeModal(m.id); });
+    }
+  });
+
+  /* ---------- 投稿 ---------- */
+  var openSubmit = document.getElementById('lcOpenSubmit');
+  if (openSubmit) openSubmit.addEventListener('click', function(){ openModal('lcModalSubmit'); });
+  var submitSend = document.getElementById('lcSubmitSend');
+  if (submitSend) submitSend.addEventListener('click', function(){
+    var n = document.getElementById('lcSubmitName');
+    var d = document.getElementById('lcSubmitDesc');
+    if (!n.value.trim()) { showToast('请先填写作品标题'); n.focus(); return; }
+    if (!d.value.trim()) { showToast('请补充一段作品简介'); d.focus(); return; }
+    closeModal('lcModalSubmit');
+    showToast('投稿已提交，编辑部将在 3–5 个工作日内回复');
+    n.value = ''; d.value = '';
+  });
+
+  /* ---------- 举报 ---------- */
+  var openReport = document.getElementById('lcOpenReport');
+  if (openReport) openReport.addEventListener('click', function(){ openModal('lcModalReport'); });
+  var reportSend = document.getElementById('lcReportSend');
+  if (reportSend) reportSend.addEventListener('click', function(){
+    var t = document.getElementById('lcReportText');
+    if (!t.value.trim()) { showToast('请先描述你遇到的问题'); t.focus(); return; }
+    closeModal('lcModalReport');
+    showToast('反馈已收到，我们会在 24 小时内核查');
+    t.value = '';
+  });
+
+  /* ---------- 分享 ---------- */
+  function sharePage(){
+    var ok = false;
+    if (navigator.share) {
+      navigator.share({ title: '蕾丝猫 秀人网', text: '一个专注原创人像影像的品牌门户' }).then(function(){ ok = true; }).catch(function(){});
+      if (ok) return;
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText('蕾丝猫 秀人网 — 专注原创人像影像的品牌门户').then(function(){
+        showToast('已复制分享内容，可粘贴到微信或微博');
+      }).catch(function(){ showToast('请使用浏览器分享功能'); });
+    } else {
+      showToast('请使用浏览器分享功能');
+    }
+  }
+  var shareTop = document.getElementById('lcShareTop');
+  if (shareTop) shareTop.addEventListener('click', sharePage);
+  var shareJoin = document.getElementById('lcShareJoin');
+  if (shareJoin) shareJoin.addEventListener('click', sharePage);
+
+  /* ---------- 创作者档案 ---------- */
+  var creatorModal = document.getElementById('lcModalCreator');
+  document.querySelectorAll('.lc-creator-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var parts = (btn.getAttribute('data-creator') || '').split('|');
+      document.getElementById('lcCreatorTitle').textContent = parts[0] || '创作者档案';
+      document.getElementById('lcCreatorSub').textContent = parts[1] || '';
+      document.getElementById('lcCreatorBody').innerHTML =
+        '<p>' + (parts[2] || '') + '</p><p style="margin-top:10px;color:#7a6a8d">' + (parts[3] || '') + '</p>';
+      openModal('lcModalCreator');
+    });
+  });
+
+  /* ---------- 回到顶部 ---------- */
+  var topBtn = document.getElementById('lcTopBtn');
+  function onScroll(){
+    if (window.scrollY > 420) topBtn.classList.add('is-show');
+    else topBtn.classList.remove('is-show');
+    updateActive();
+  }
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+})();
+</script>
+</body>
+  </html>
